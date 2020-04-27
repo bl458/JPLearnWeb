@@ -9,6 +9,7 @@ import QuizResult from './components/QuizResult';
 class Quiz extends Component {
   state={
     playing: 0, //Start page: 0, In-game: 1, Results page: 2
+    deck: '',
     numberq: 1, //Total number of questions in the quiz (min 1, max 10)
     score: 0,
     qBank: [],
@@ -31,6 +32,8 @@ class Quiz extends Component {
     score: 0,
     playing: this.state.playing===0 ? 1 : 0
   });
+
+  onDeckChange = (newDeck) => this.setState({deck: newDeck.target.value});
 
   onAnswerChange = (newAnswer) => this.setState({answer: newAnswer.target.value});
 

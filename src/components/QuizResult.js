@@ -1,8 +1,8 @@
 import React from 'react';
 
 const QuizResult=({score, numberq, playAgain}) => (
-  <div className="score-board">
-    <div className="score">
+  <div className="quiz-board">
+    <div className="quiz-inner">
       You scored {score} out of {numberq} question(s)!
       <br /><br />
 
