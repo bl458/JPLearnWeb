@@ -10,7 +10,7 @@ import QuizResult from './components/QuizResult';
 class Quiz extends Component {
   state={
     playing: 0, //Start page: 0, In-game: 1, Results page: 2
-    deck: '',
+    deck: 'N1',
     numberq: 1, //Total number of questions in the quiz (min 1, max 10)
     score: 0,
     qBank: [{kanji:"",hiragana:"",english:""}],
@@ -118,6 +118,7 @@ class Quiz extends Component {
           <QuizState
             qBank={this.state.qBank}
             numberq={this.state.numberq}
+            deck={this.state.deck}
             onSubmit={this.onSubmit}
             onSkip={this.onSkip}
             onAnswerChange={this.onAnswerChange}

@@ -5,7 +5,7 @@ class QuizState extends Component {
     return (
       <div className="quiz-board">
         <div className="quiz-inner">
-          Question {this.props.numberq-this.props.qBank.length+1} of {this.props.numberq}
+          Question {this.props.numberq-this.props.qBank.length+1} of {this.props.numberq} ( {this.props.deck})
           <br /><br /><br />
 
           Type the Hiragana reading!
