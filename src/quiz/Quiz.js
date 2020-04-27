@@ -76,11 +76,6 @@ class Quiz extends Component {
     this.setState({
       questionPage: 1
     });
-
-    // If user answered all, quit quiz
-    if (this.state.qBank.length===0) {
-      this.setState({playing: 2});
-    }
   };
 
   onEnterPress = (e) => {
@@ -103,6 +98,11 @@ class Quiz extends Component {
     this.setState({
       questionPage: 0
     });
+
+    // If user answered all, quit quiz
+    if (this.state.qBank.length===0) {
+      this.setState({playing: 2});
+    }
   }
 
   /*Actual rendering from here*/
