@@ -13,7 +13,8 @@ class Quiz extends Component {
     numberq: 1, //Total number of questions in the quiz (min 1, max 10)
     score: 0,
     qBank: [{kanji:"",hiragana:"",english:""}],
-    answer: ''
+    answer: '',
+    questionPage: 0 //Question Page: 0, Answer page: 1
   };
 
   /*Functions*/
@@ -112,6 +113,7 @@ class Quiz extends Component {
             numberq={this.state.numberq}
             deck={this.state.deck}
             answer={this.state.answer}
+            questionPage={this.state.questionPage}
             onSubmit={this.onSubmit}
             onSkip={this.onSkip}
             onAnswerChange={this.onAnswerChange}

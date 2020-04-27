@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import QuestionPage from './QuestionPage';
 
 class QuizState extends Component {
   render() {
@@ -13,22 +14,20 @@ class QuizState extends Component {
 
           {this.props.qBank[0].Kanji}
           <br /><br />
-          <input
-            className="answer-input"
-            type="text"
-            value={this.props.answer}
-            name="quizAnswer"
-            onChange={this.props.onAnswerChange}
-            onKeyPress={this.props.onEnterPress}/>
-          <br /><br />
 
-          <button className="submitBtn" onClick={this.props.onSubmit}>Submit</button>
-          <button className="submitBtn" onClick={this.props.onSkip}>Skip</button>
+          {this.props.questionPage===0&&
+            <QuestionPage
+              answer={this.props.answer}
+              onAnswerChange={this.props.onAnswerChange}
+              onEnterPress={this.props.onEnterPress}
+              onSubmit={this.props.onSubmit}
+              onSkip={this.props.onSkip}
+            />
+          }
         </div>
       </div>
     );
   }
-
 }
 
 export default QuizState;
