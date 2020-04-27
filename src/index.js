@@ -27,23 +27,36 @@ class Quiz extends Component {
     this.setState({numberq: newNumberq.target.value>0&&newNumberq.target.value<10
       ? newNumberq.target.value : 10});
 
-  onStart = () => this.setState({
-    qBank: this.state.qBank.slice(0,this.state.numberq),
-    score: 0,
-    playing: this.state.playing===0 ? 1 : 0
-  });
+  onStart = () => {
+    this.setState({
+      qBank: this.state.qBank.slice(0,this.state.numberq),
+      score: 0,
+      playing: this.state.playing===0 ? 1 : 0
+    });
+    console.log("Finished onStart. numberq: " +this.state.numberq +" qBank: " +this.state.qBank);
+  };
+
+  onAgain = () => {
+    this.setState({
+      score: 0,
+      playing: this.state.playing===0 ? 1 : 0
+    });
+    console.log("Finished onAgain. numberq: " +this.state.numberq +" qBank: " +this.state.qBank);
+  };
 
   onDeckChange = (newDeck) => this.setState({deck: newDeck.target.value});
 
   onAnswerChange = (newAnswer) => this.setState({answer: newAnswer.target.value});
 
   onSubmit = (e) => {
+    console.log("Started onSubmit. qBank: " +this.state.qBank);
     e.preventDefault();
     // Update score and resets the answer <input>
     this.setState({
       score:
         this.state.qBank[0].hiragana===this.state.answer ?
         this.state.score+1 : this.state.score,
+      answer: ''
       });
 
     // Update question
@@ -57,7 +70,7 @@ class Quiz extends Component {
       this.getQuestions();
     }
     this.setState({answer: ''});
-    console.log(this.state.qBank.length +' ' +this.state.answer)
+    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank);
   };
 
   onSkip = () => {
@@ -84,9 +97,11 @@ class Quiz extends Component {
         <div className="title">Quiz</div>
         {this.state.playing===0&&
         <QuizStart
-          onNumberqChange={this.onNumberqChange}
-          onStart={this.onStart}
           numberq={this.state.numberq}
+          onNumberqChange={this.onNumberqChange}
+          deck={this.state.deck}
+          onDeckChange={this.onDeckChange}
+          onStart={this.onStart}
         />
         }
         {this.state.playing===1&&
@@ -102,7 +117,7 @@ class Quiz extends Component {
           <QuizResult
             score={this.state.score}
             numberq={this.state.numberq}
-            playAgain={this.onStart}
+            playAgain={this.onAgain}
           />
         }
       </div>

@@ -1,6 +1,6 @@
 import React from "react"
 
-const QuizStart = ({numberq,onNumberqChange,onStart}) => (
+const QuizStart = ({numberq,onNumberqChange,deck,onDeckChange,onStart}) => (
   <div className="quiz-board">
     <div className="quiz-inner">
       <label>How many questions? </label>
@@ -12,7 +12,7 @@ const QuizStart = ({numberq,onNumberqChange,onStart}) => (
         onChange={onNumberqChange} />
       <br /><br />
       <label>Choose a deck to play: </label>
-      <select class="deck-select">
+      <select className="deck-select" value={deck} onChange={onDeckChange}>
         <option value="N1">N1</option>
         <option value="N2">N2</option>
         <option value="N3">N3</option>
