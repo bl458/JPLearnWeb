@@ -119,6 +119,7 @@ class Quiz extends Component {
             qBank={this.state.qBank}
             numberq={this.state.numberq}
             deck={this.state.deck}
+            answer={this.state.answer}
             onSubmit={this.onSubmit}
             onSkip={this.onSkip}
             onAnswerChange={this.onAnswerChange}
