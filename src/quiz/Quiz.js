@@ -43,7 +43,8 @@ class Quiz extends Component {
     this.getQuestions();
     this.setState({
       score: 0,
-      playing: this.state.playing===0 ? 1 : 0
+      playing: this.state.playing===0 ? 1 : 0,
+      questionPage: 0
     });
     console.log("Finished onStart. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };
@@ -57,13 +58,23 @@ class Quiz extends Component {
     console.log("Finished onAgain. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };
 
-  onSkip = () => {
-    // Updates question, Resets answer-input value
-    var qBank_cp=this.state.qBank;
-    qBank_cp.splice(0,1);
+  onSubmit = () => {
+    console.log("Started onSubmit. qBank: " +this.state.qBank.length);
+    // Updates score, shows answer
     this.setState({
-      qBank: qBank_cp,
-      answer: ''
+      score:
+        this.state.qBank[0].Hiragana===this.state.answer.trim() ?
+        this.state.score+1 : this.state.score,
+      questionPage: 1
+    });
+
+    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
+  };
+
+  onSkip = () => {
+    // Shows answer
+    this.setState({
+      questionPage: 1
     });
 
     // If user answered all, quit quiz
@@ -72,26 +83,27 @@ class Quiz extends Component {
     }
   };
 
-  onSubmit = () => {
-    console.log("Started onSubmit. qBank: " +this.state.qBank.length);
-    // Updates score
-    this.setState({
-      score:
-        this.state.qBank[0].Hiragana===this.state.answer.trim() ?
-        this.state.score+1 : this.state.score
-      });
-
-    this.onSkip();
-
-    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
-  };
-
   onEnterPress = (e) => {
     var code=e.keyCode || e.which;
     if (code===13) {
       this.onSubmit();
     }
   };
+
+  onNext = () => {
+    // Updates question, resets answer-input value
+    var qBank_cp=this.state.qBank;
+    qBank_cp.splice(0,1);
+    this.setState({
+      qBank: qBank_cp,
+      answer: ''
+    });
+
+    // Back to question
+    this.setState({
+      questionPage: 0
+    });
+  }
 
   /*Actual rendering from here*/
   render() {
@@ -118,6 +130,7 @@ class Quiz extends Component {
             onSkip={this.onSkip}
             onAnswerChange={this.onAnswerChange}
             onEnterPress={this.onEnterPress}
+            onNext={this.onNext}
           />
         }
         {this.state.playing===2&&

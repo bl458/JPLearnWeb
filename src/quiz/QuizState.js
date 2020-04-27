@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
 import QuestionPage from './QuestionPage';
+import AnswerPage from './AnswerPage';
 
 class QuizState extends Component {
   render() {
     return (
       <div className="quiz-board">
         <div className="quiz-inner">
-          Question {this.props.numberq-this.props.qBank.length+1} of {this.props.numberq} ( {this.props.deck})
+          Question {this.props.numberq-this.props.qBank.length+1} of {this.props.numberq} ( {this.props.deck} )
           <br /><br /><br />
 
           Type the Hiragana reading!
@@ -22,6 +23,13 @@ class QuizState extends Component {
               onEnterPress={this.props.onEnterPress}
               onSubmit={this.props.onSubmit}
               onSkip={this.props.onSkip}
+            />
+          }
+
+          {this.props.questionPage===1&&
+            <AnswerPage
+              qBank={this.props.qBank}
+              onNext={this.props.onNext}
             />
           }
         </div>
