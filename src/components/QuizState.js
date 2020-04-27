@@ -11,7 +11,7 @@ class QuizState extends Component {
           Type the Hiragana reading!
           <br /><br />
 
-          {this.props.qBank[0].kanji}
+          {this.props.qBank[0].Kanji}
           <br /><br />
           <input
             className="answer-input"

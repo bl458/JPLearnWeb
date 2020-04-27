@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import './assets/style.css';
 import N1 from './assets/preMadeDecks/N1';
+import N2 from './assets/preMadeDecks/N2';
 import QuizStart from './components/QuizStart';
 import QuizState from './components/QuizState';
 import QuizResult from './components/QuizResult';
@@ -12,15 +13,22 @@ class Quiz extends Component {
     deck: '',
     numberq: 1, //Total number of questions in the quiz (min 1, max 10)
     score: 0,
-    qBank: [],
+    qBank: [{kanji:"",hiragana:"",english:""}],
     answer: ''
   };
 
   /*Functions*/
   getQuestions = () => {
-    N1().then(
-      question => this.setState({qBank: question})
-    )
+    if (this.state.deck==='N1') {
+      N1().then(
+        question => this.setState({qBank: question.slice(0,this.state.numberq)})
+      )
+    }
+    else if (this.state.deck==='N2') {
+      N2().then(
+        question => this.setState({qBank: question.slice(0,this.state.numberq)})
+      )
+    }
   };
 
   onNumberqChange = (newNumberq) =>
@@ -28,20 +36,21 @@ class Quiz extends Component {
       ? newNumberq.target.value : 10});
 
   onStart = () => {
+    this.getQuestions();
     this.setState({
-      qBank: this.state.qBank.slice(0,this.state.numberq),
       score: 0,
       playing: this.state.playing===0 ? 1 : 0
     });
-    console.log("Finished onStart. numberq: " +this.state.numberq +" qBank: " +this.state.qBank);
+    console.log("Finished onStart. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };
 
   onAgain = () => {
     this.setState({
+      qBank: [{kanji:"",hiragana:"",english:""}],
       score: 0,
       playing: this.state.playing===0 ? 1 : 0
     });
-    console.log("Finished onAgain. numberq: " +this.state.numberq +" qBank: " +this.state.qBank);
+    console.log("Finished onAgain. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };
 
   onDeckChange = (newDeck) => this.setState({deck: newDeck.target.value});
@@ -49,12 +58,12 @@ class Quiz extends Component {
   onAnswerChange = (newAnswer) => this.setState({answer: newAnswer.target.value});
 
   onSubmit = (e) => {
-    console.log("Started onSubmit. qBank: " +this.state.qBank);
+    console.log("Started onSubmit. qBank: " +this.state.qBank.length);
     e.preventDefault();
     // Update score and resets the answer <input>
     this.setState({
       score:
-        this.state.qBank[0].hiragana===this.state.answer ?
+        this.state.qBank[0].Hiragana===this.state.answer ?
         this.state.score+1 : this.state.score,
       answer: ''
       });
@@ -67,10 +76,9 @@ class Quiz extends Component {
     // If user answered all, quit quiz
     if (this.state.qBank.length===0) {
       this.setState({playing: 2});
-      this.getQuestions();
+      // this.getQuestions();
     }
-    this.setState({answer: ''});
-    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank);
+    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };
 
   onSkip = () => {
@@ -82,14 +90,16 @@ class Quiz extends Component {
     // If user answered all, quit quiz
     if (this.state.qBank.length===0) {
       this.setState({playing: 2});
-      this.getQuestions();
+      // this.getQuestions();
     }
   }
 
   /*Actual rendering from here*/
-  componentDidMount() {
-    this.getQuestions();
-  };
+
+  // componentDidMount() {
+  //   console.log("componentDidMount is called");
+  //   this.getQuestions();
+  // };
 
   render() {
     return (
