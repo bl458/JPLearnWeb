@@ -35,6 +35,10 @@ class Quiz extends Component {
     this.setState({numberq: newNumberq.target.value>0&&newNumberq.target.value<10
       ? newNumberq.target.value : 10});
 
+  onDeckChange = (newDeck) => this.setState({deck: newDeck.target.value});
+
+  onAnswerChange = (newAnswer) => this.setState({answer: newAnswer.target.value});
+
   onStart = () => {
     this.getQuestions();
     this.setState({
@@ -53,54 +57,43 @@ class Quiz extends Component {
     console.log("Finished onAgain. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };
 
-  onDeckChange = (newDeck) => this.setState({deck: newDeck.target.value});
-
-  onAnswerChange = (newAnswer) => this.setState({answer: newAnswer.target.value});
-
-  onSubmit = (e) => {
-    console.log("Started onSubmit. qBank: " +this.state.qBank.length);
-    e.preventDefault();
-    // Update score and resets the answer <input>
-    this.setState({
-      score:
-        this.state.qBank[0].Hiragana===this.state.answer ?
-        this.state.score+1 : this.state.score,
-      answer: ''
-      });
-
-    // Update question
+  onSkip = () => {
+    // Updates question, Resets answer-input value
     var qBank_cp=this.state.qBank;
     qBank_cp.splice(0,1);
-    this.setState({qBank: qBank_cp});
+    this.setState({
+      qBank: qBank_cp,
+      answer: ''
+    });
 
     // If user answered all, quit quiz
     if (this.state.qBank.length===0) {
       this.setState({playing: 2});
-      // this.getQuestions();
     }
+  };
+
+  onSubmit = () => {
+    console.log("Started onSubmit. qBank: " +this.state.qBank.length);
+    // Updates score
+    this.setState({
+      score:
+        this.state.qBank[0].Hiragana===this.state.answer.trim() ?
+        this.state.score+1 : this.state.score
+      });
+
+    this.onSkip();
+
     console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };
 
-  onSkip = () => {
-    // Update question
-    var qBank_cp=this.state.qBank;
-    qBank_cp.splice(0,1);
-    this.setState({qBank: qBank_cp});
-
-    // If user answered all, quit quiz
-    if (this.state.qBank.length===0) {
-      this.setState({playing: 2});
-      // this.getQuestions();
+  onEnterPress = (e) => {
+    var code=e.keyCode || e.which;
+    if (code===13) {
+      this.onSubmit();
     }
-  }
+  };
 
   /*Actual rendering from here*/
-
-  // componentDidMount() {
-  //   console.log("componentDidMount is called");
-  //   this.getQuestions();
-  // };
-
   render() {
     return (
       <div className="container">
@@ -123,6 +116,7 @@ class Quiz extends Component {
             onSubmit={this.onSubmit}
             onSkip={this.onSkip}
             onAnswerChange={this.onAnswerChange}
+            onEnterPress={this.onEnterPress}
           />
         }
         {this.state.playing===2&&

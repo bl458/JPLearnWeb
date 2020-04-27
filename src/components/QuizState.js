@@ -18,7 +18,8 @@ class QuizState extends Component {
             type="text"
             value={this.props.answer}
             name="quizAnswer"
-            onChange={this.props.onAnswerChange} />
+            onChange={this.props.onAnswerChange}
+            onKeyPress={this.props.onEnterPress}/>
           <br /><br />
 
           <button className="submitBtn" onClick={this.props.onSubmit}>Submit</button>
