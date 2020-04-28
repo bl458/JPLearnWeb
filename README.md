@@ -6,8 +6,7 @@ To-be-implemented:
  - Margins
  
 1. Quiz/Quiz 
- - enter key 
- - time limit
+- time limit
  
 2. Quiz/Deck Constructor 
 
