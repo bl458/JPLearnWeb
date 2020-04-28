@@ -1,17 +1,22 @@
-This is an app for japanese learners! 
+This is an app for japanese learners!
 
 To-be-implemented:
 
-0. General 
- - Margins
- 
-1. Quiz/Quiz 
-- time limit
- 
-2. Quiz/Deck Constructor 
+0. General
+- Margins
 
-3. Quiz/Deck Progress
+1. Quiz/Quiz
+- Time limit
+- More default decks
+- Create review.deck
 
-4. Video 
+2. Quiz/Deck Constructor
+- View/download deck
 
-5. Home(?)
+3. Video
+
+4. Quiz/Deck Progress
+
+5. Json Parsing + MySQL
+
+6. Home(?)
