@@ -6,7 +6,7 @@ class QuestionPage extends Component {
       <input
         className="answer-input"
         type="text"
-        autofocus="autofocus"
+        autoFocus="autofocus"
         value={this.props.answer}
         name="quizAnswer"
         onChange={this.props.onAnswerChange}
