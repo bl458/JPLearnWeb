@@ -39,7 +39,7 @@
 .quiz-inner {
   display: inline-block;
   width: 1024px;
-  font-size: 3em;
+  font-size: 2.3em;
   top: 250px;
   text-align: center;
 }
@@ -61,12 +61,12 @@
 }
 
 .playBtn {
-  font-size: 1.5em;
+  font-size: 1.1em;
   padding: 10px;
   top: 200px;
   background-color: rgb(46, 182, 46);
   color: rgb(255, 255, 255);
-  width: 300px;
+  width: 200px;
   left: 0px;
   right: 100px;
   margin: auto;
@@ -109,7 +109,7 @@
   width: 13%;
   padding: 20px 20px;
   text-align: center;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 
 .answer-input{
@@ -121,9 +121,9 @@
 }
 
 .numberq-input{
-  width: 10%;
+  width: 8%;
   padding: 20px 20px;
   box-sizing: border-box;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
