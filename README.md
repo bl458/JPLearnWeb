@@ -1,4 +1,5 @@
 This is an app for japanese learners! 
+
 To-be-implemented:
 
 0. General 
