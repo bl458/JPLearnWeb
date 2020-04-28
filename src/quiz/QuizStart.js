@@ -3,6 +3,7 @@ import React from "react"
 const QuizStart = ({numberq,onNumberqChange,deck,onDeckChange,onStart}) => (
   <div className="quiz-board">
     <div className="quiz-inner">
+      <br /><br />
       <label>How many questions? </label>
       <input
         className="numberq-input"
