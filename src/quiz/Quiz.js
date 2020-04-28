@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Quiz.css'
-import N1 from '../_assets/preMadeDecks/N1';
-import N2 from '../_assets/preMadeDecks/N2';
+import N1 from '../assets/preMadeDecks/N1';
+import N2 from '../assets/preMadeDecks/N2';
 import QuizStart from './QuizStart';
 import QuizState from './QuizState';
 import QuizResult from './QuizResult';

@@ -1,21 +1,22 @@
 import React from 'react';
 import './App.css';
 import Quiz from '../quiz/Quiz';
-import Nav from '../nav/Nav';
+import ReactiveNav from '../nav/ReactiveNav';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-
 
 const App = () => {
   return (
-    <Router>
-      <div className="App">
-        <Nav />
+    <div className="App">
+      <Router>
+        <ReactiveNav />
         <Switch>
           <Route path='/' exact component={Home}/>
-          <Route path='/quiz' component={Quiz}/>
+          <Route path='/home' exact component={Home}/>
+          <Route path='/quiz/quiz' component={Quiz}/>
         </Switch>
-      </div>
-    </Router>
+      </Router>
+    </div>
   );
 }
 
