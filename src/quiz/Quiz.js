@@ -78,10 +78,10 @@ class Quiz extends Component {
     });
   };
 
-  onEnterPress = (e) => {
+  onEnterPress = (func,e) => {
     var code=e.keyCode || e.which;
     if (code===13) {
-      this.onSubmit();
+      func();
     }
   };
 
