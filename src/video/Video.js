@@ -5,7 +5,7 @@ import './Video.css';
 
 class Video extends Component {
   state={
-    url: 'https://www.youtube.com/watch?v=ysz5S6PUM-U',
+    url: 'https://www.youtube.com/watch?v=x7hjx8OPiA0', //Placeholder
     played: 0 //In seconds
   }
 
