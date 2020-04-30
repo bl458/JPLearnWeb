@@ -13,7 +13,7 @@ To-be-implemented:
 2. Quiz/Deck Constructor
 - View/download deck
 
-3. Video
+3. Video Learning
 
 4. Quiz/Deck Progress
 
