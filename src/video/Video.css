@@ -17,7 +17,7 @@
 }
 
 .video-inner {
-  padding-top: 3%; /* Player ratio: 100 / (1280 / 720) */
+  padding-top: 1%; /* Player ratio: 100 / (1280 / 720) */
   text-align: center;
   display: inline-block;
   width: 100%;

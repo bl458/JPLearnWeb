@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
-const ResponsivePlayer = () => (
+const ResponsivePlayer = ({url, handleProgress}) => (
   <div className="video-inner">
     <ReactPlayer
       className='react-player'
-      url='https://www.youtube.com/watch?v=ysz5S6PUM-U'
+      url={url}
       controls='true'
       width='100%'
       height='100%'
+      onProgress={handleProgress}
     />
   </div>
 )

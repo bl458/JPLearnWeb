@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Subtitle = () => (
+const Subtitle = ({played}) => (
   <div className="subtitle">
-    Subtitle goes here
+    Video has played {played} seconds!
   </div>
 )
 
-export default Subtitle
+export default Subtitle;
