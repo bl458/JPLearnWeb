@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
-import Quiz from '../quiz/Quiz';
-import ReactiveNav from '../nav/ReactiveNav';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import ReactiveNav from '../nav/ReactiveNav';
+import Quiz from '../quiz/Quiz';
+import Video from '../video/Video';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <Switch>
           <Route path='/' exact component={Home}/>
           <Route path='/home' exact component={Home}/>
+          <Route path='/videos' component={Video}/>
           <Route path='/quiz/quiz' component={Quiz}/>
         </Switch>
       </Router>
