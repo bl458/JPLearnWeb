@@ -1,0 +1,1847 @@
+[
+  {
+    "content": "A Dim Light in the Darkness of Despair \r\nHumanity Rises Again (1)", 
+    "end": 96.99, 
+    "start": 91.98
+  }, 
+  {
+    "content": "You there!", 
+    "end": 100.07, 
+    "start": 98.91
+  }, 
+  {
+    "content": "Yes, sir!", 
+    "end": 100.91, 
+    "start": 100.07
+  }, 
+  {
+    "content": "Who are you?", 
+    "end": 102.91, 
+    "start": 101.28
+  }, 
+  {
+    "content": "Armin Arlert, from Zhiganshina!", 
+    "end": 105.87, 
+    "start": 102.91
+  }, 
+  {
+    "content": "Yeah? That's a stupid name.", 
+    "end": 108.25, 
+    "start": 106.08
+  }, 
+  {
+    "content": "Your parents give you that?", 
+    "end": 109.42, 
+    "start": 108.25
+  }, 
+  {
+    "content": "My grandfather!", 
+    "end": 111.17, 
+    "start": 109.42
+  }, 
+  {
+    "content": "Arlert, what are you doing here?", 
+    "end": 114.0, 
+    "start": 111.17
+  }, 
+  {
+    "content": "Trying to aid humanity's victory!", 
+    "end": 116.13, 
+    "start": 114.0
+  }, 
+  {
+    "content": "That is indeed wonderful...", 
+    "end": 117.97, 
+    "start": 116.26
+  }, 
+  {
+    "content": "Then you will feed the Titans.", 
+    "end": 119.93, 
+    "start": 117.97
+  }, 
+  {
+    "content": "Row 3, about face!", 
+    "end": 122.01, 
+    "start": 119.93
+  }, 
+  {
+    "content": "Who are you?", 
+    "end": 124.89, 
+    "start": 123.56
+  }, 
+  {
+    "content": "Thomas Wagner, from Trost!", 
+    "end": 127.85, 
+    "start": 124.89
+  }, 
+  {
+    "content": "I can't hear you!", 
+    "end": 129.14, 
+    "start": 127.85
+  }, 
+  {
+    "content": "Thomas Wagner, from\u2014", 
+    "end": 130.44, 
+    "start": 129.14
+  }, 
+  {
+    "content": "{\\an8}Too soft! Go practice in the cattle shed!", 
+    "end": 132.77, 
+    "start": 130.44
+  }, 
+  {
+    "content": "There he goes...", 
+    "end": 131.73, 
+    "start": 130.69
+  }, 
+  {
+    "content": "When you were a trainee,", 
+    "end": 134.11, 
+    "start": 132.73
+  }, 
+  {
+    "content": "{\\an8}You, next!", 
+    "end": 134.07, 
+    "start": 132.77
+  }, 
+  {
+    "content": "your first day was just the same.", 
+    "end": 135.82, 
+    "start": 134.11
+  }, 
+  {
+    "content": "{\\an8}Mina Karolina, from Karanes!", 
+    "end": 137.19, 
+    "start": 134.73
+  }, 
+  {
+    "content": "It brings back memories.", 
+    "end": 137.19, 
+    "start": 135.82
+  }, 
+  {
+    "content": "Wrong!", 
+    "end": 138.4, 
+    "start": 137.36
+  }, 
+  {
+    "content": "You are from the pig shed, worth less than cattle.", 
+    "end": 140.61, 
+    "start": 138.4
+  }, 
+  {
+    "content": "Yes, sir! I am less than cattle!", 
+    "end": 142.83, 
+    "start": 140.61
+  }, 
+  {
+    "content": "{\\an8}No, you're a fly, swarming around a pig's ass!", 
+    "end": 145.83, 
+    "start": 142.83
+  }, 
+  {
+    "content": "What's the point of screaming at them?", 
+    "end": 145.04, 
+    "start": 143.08
+  }, 
+  {
+    "content": "It's a rite of passage.", 
+    "end": 146.5, 
+    "start": 145.04
+  }, 
+  {
+    "content": "{\\an8}Yes, sir!", 
+    "end": 146.58, 
+    "start": 145.83
+  }, 
+  {
+    "content": "We force them to abandon who they are,", 
+    "end": 148.79, 
+    "start": 146.5
+  }, 
+  {
+    "content": "{\\an8}Next!", 
+    "end": 147.37, 
+    "start": 146.58
+  }, 
+  {
+    "content": "{\\an8}Samuel Linke-Jackson, from Snate Village!", 
+    "end": 149.46, 
+    "start": 147.37
+  }, 
+  {
+    "content": "then raise them from nothing as pure soldiers.", 
+    "end": 152.13, 
+    "start": 148.79
+  }, 
+  {
+    "content": "{\\an8}A horrible name! Change it now!", 
+    "end": 153.38, 
+    "start": 151.42
+  }, 
+  {
+    "content": "{\\an8}What are you doing here?", 
+    "end": 155.3, 
+    "start": 153.38
+  }, 
+  {
+    "content": "It is a necessary process.", 
+    "end": 155.3, 
+    "start": 153.38
+  }, 
+  {
+    "content": "Sacrificing myself for humanity!", 
+    "end": 157.3, 
+    "start": 155.3
+  }, 
+  {
+    "content": "Row 4, about face!", 
+    "end": 159.05, 
+    "start": 157.3
+  }, 
+  {
+    "content": "It seems not all of them are \r\nbeing subjected to that process.", 
+    "end": 163.26, 
+    "start": 160.76
+  }, 
+  {
+    "content": "{\\an8}Listen up! I've seen a lot of shit in my time,", 
+    "end": 165.93, 
+    "start": 163.89
+  }, 
+  {
+    "content": "There is no need for those who have \r\nalready undergone the rite of passage.", 
+    "end": 167.22, 
+    "start": 163.89
+  }, 
+  {
+    "content": "{\\an8}but you are the sorriest pieces \r\nof shit I've ever seen.", 
+    "end": 167.98, 
+    "start": 165.93
+  }, 
+  {
+    "content": "If I were to guess,", 
+    "end": 169.14, 
+    "start": 167.93
+  }, 
+  {
+    "content": "{\\an8}You're in for three years of hell!", 
+    "end": 171.06, 
+    "start": 167.98
+  }, 
+  {
+    "content": "they probably lived through hell two years ago.", 
+    "end": 171.65, 
+    "start": 169.14
+  }, 
+  {
+    "content": "You can see it in their eyes.", 
+    "end": 174.06, 
+    "start": 172.05
+  }, 
+  {
+    "content": "Now, let's go.", 
+    "end": 175.57, 
+    "start": 174.32
+  }, 
+  {
+    "content": "Who are you?!", 
+    "end": 178.24, 
+    "start": 176.78
+  }, 
+  {
+    "content": "Jean Kirschstein, from Trost!", 
+    "end": 180.7, 
+    "start": 178.24
+  }, 
+  {
+    "content": "What are you doing here?", 
+    "end": 181.82, 
+    "start": 180.7
+  }, 
+  {
+    "content": "Joining the Military Police, \r\nfor a life deep within the walls.", 
+    "end": 186.04, 
+    "start": 183.28
+  }, 
+  {
+    "content": "Oh, I see...", 
+    "end": 189.71, 
+    "start": 188.45
+  }, 
+  {
+    "content": "You want access to the Interior?", 
+    "end": 191.71, 
+    "start": 189.71
+  }, 
+  {
+    "content": "Yes.", 
+    "end": 192.54, 
+    "start": 191.71
+  }, 
+  {
+    "content": "Who said you could sit down?!", 
+    "end": 196.25, 
+    "start": 194.46
+  }, 
+  {
+    "content": "Anyone who can't handle this", 
+    "end": 198.34, 
+    "start": 196.25
+  }, 
+  {
+    "content": "will never make the Military Police!", 
+    "end": 200.26, 
+    "start": 198.34
+  }, 
+  {
+    "content": "Who are you? \r\nWhat are you doing here?", 
+    "end": 203.97, 
+    "start": 201.38
+  }, 
+  {
+    "content": "Marco Bott, Jinae City, Wall Rose South District!", 
+    "end": 206.26, 
+    "start": 203.97
+  }, 
+  {
+    "content": "I want to join the Military Police,", 
+    "end": 208.68, 
+    "start": 206.26
+  }, 
+  {
+    "content": "to offer the King my body and self in service!", 
+    "end": 210.93, 
+    "start": 208.68
+  }, 
+  {
+    "content": "Really...", 
+    "end": 213.06, 
+    "start": 211.73
+  }, 
+  {
+    "content": "I'm glad to hear that.", 
+    "end": 215.61, 
+    "start": 213.35
+  }, 
+  {
+    "content": "Good luck.", 
+    "end": 217.02, 
+    "start": 215.61
+  }, 
+  {
+    "content": "However...", 
+    "end": 218.32, 
+    "start": 217.4
+  }, 
+  {
+    "content": "The King doesn't want your body.", 
+    "end": 223.66, 
+    "start": 220.24
+  }, 
+  {
+    "content": "Next! You!", 
+    "end": 227.03, 
+    "start": 225.41
+  }, 
+  {
+    "content": "Who are you?", 
+    "end": 228.33, 
+    "start": 227.03
+  }, 
+  {
+    "content": "Connie Springer, of Ragako Village, \r\nWall Rose South District!", 
+    "end": 232.33, 
+    "start": 228.66
+  }, 
+  {
+    "content": "You're doing it wrong, Connie Springer...", 
+    "end": 235.83, 
+    "start": 233.21
+  }, 
+  {
+    "content": "I explained that this salute demonstrates", 
+    "end": 239.25, 
+    "start": 235.83
+  }, 
+  {
+    "content": "your resolve to devote your \r\nentire heart to the people.", 
+    "end": 242.76, 
+    "start": 239.25
+  }, 
+  {
+    "content": "Is your heart on your right side?", 
+    "end": 246.18, 
+    "start": 243.09
+  }, 
+  {
+    "content": "Hey, you...", 
+    "end": 257.4, 
+    "start": 255.81
+  }, 
+  {
+    "content": "What are you doing?", 
+    "end": 259.11, 
+    "start": 257.4
+  }, 
+  {
+    "content": "You're the one I'm talking to! You!", 
+    "end": 265.49, 
+    "start": 263.53
+  }, 
+  {
+    "content": "Who are you?!", 
+    "end": 266.87, 
+    "start": 265.49
+  }, 
+  {
+    "content": "Sasha Blause, from Dauper village, \r\nWall Rose South District!", 
+    "end": 273.33, 
+    "start": 269.62
+  }, 
+  {
+    "content": "Sasha Blause,", 
+    "end": 276.33, 
+    "start": 274.37
+  }, 
+  {
+    "content": "what are you holding in your right hand?", 
+    "end": 279.29, 
+    "start": 276.33
+  }, 
+  {
+    "content": "A boiled potato!", 
+    "end": 280.75, 
+    "start": 279.59
+  }, 
+  {
+    "content": "The kitchen had a fresh batch, and I couldn't resist.", 
+    "end": 284.26, 
+    "start": 281.34
+  }, 
+  {
+    "content": "Did you steal it?", 
+    "end": 287.3, 
+    "start": 284.93
+  }, 
+  {
+    "content": "Why?", 
+    "end": 288.55, 
+    "start": 287.3
+  }, 
+  {
+    "content": "Why would you choose to eat a potato now?", 
+    "end": 290.76, 
+    "start": 288.85
+  }, 
+  {
+    "content": "Letting it get cold would've been a waste,", 
+    "end": 294.18, 
+    "start": 291.56
+  }, 
+  {
+    "content": "so I decided I should eat it now.", 
+    "end": 296.73, 
+    "start": 294.69
+  }, 
+  {
+    "content": "Well, I still don't understand...", 
+    "end": 300.27, 
+    "start": 297.69
+  }, 
+  {
+    "content": "Why would you eat that potato?", 
+    "end": 302.99, 
+    "start": 300.73
+  }, 
+  {
+    "content": "Are you asking me why people eat potatoes?", 
+    "end": 309.2, 
+    "start": 304.74
+  }, 
+  {
+    "content": "You can have half...", 
+    "end": 325.55, 
+    "start": 323.59
+  }, 
+  {
+    "content": "Half...", 
+    "end": 329.05, 
+    "start": 327.26
+  }, 
+  {
+    "content": "He's still making that potato girl run.", 
+    "end": 337.56, 
+    "start": 334.02
+  }, 
+  {
+    "content": "Wow, five straight hours?", 
+    "end": 340.77, 
+    "start": 337.56
+  }, 
+  {
+    "content": "But she seemed more distraught \r\nwhen told she wouldn't get dinner", 
+    "end": 344.53, 
+    "start": 341.02
+  }, 
+  {
+    "content": "than when told she must run until she dropped.", 
+    "end": 348.49, 
+    "start": 344.53
+  }, 
+  {
+    "content": "If I remember correctly,", 
+    "end": 350.62, 
+    "start": 349.07
+  }, 
+  {
+    "content": "Dauper Village is a tiny hunting \r\nvillage, deep in the mountains.", 
+    "end": 354.2, 
+    "start": 350.62
+  }, 
+  {
+    "content": "What's that?", 
+    "end": 356.0, 
+    "start": 355.2
+  }, 
+  {
+    "content": "The dropouts.", 
+    "end": 358.08, 
+    "start": 356.66
+  }, 
+  {
+    "content": "They requested a transfer, to the frontier.", 
+    "end": 360.5, 
+    "start": 358.37
+  }, 
+  {
+    "content": "What? But it's only the first day.", 
+    "end": 363.71, 
+    "start": 360.83
+  }, 
+  {
+    "content": "It was only a matter of time.", 
+    "end": 365.34, 
+    "start": 363.71
+  }, 
+  {
+    "content": "If you aren't strong enough, \r\nyou have to leave.", 
+    "end": 367.34, 
+    "start": 365.34
+  }, 
+  {
+    "content": "Hard to believe they'd rather go back \r\nto weeding and picking up rocks.", 
+    "end": 372.89, 
+    "start": 369.59
+  }, 
+  {
+    "content": "Hey, he didn't ask where \r\nyou were from, did he?", 
+    "end": 377.39, 
+    "start": 374.06
+  }, 
+  {
+    "content": "Zhiganshina, the same as him.", 
+    "end": 380.35, 
+    "start": 377.85
+  }, 
+  {
+    "content": "I see... That's...", 
+    "end": 383.65, 
+    "start": 381.27
+  }, 
+  {
+    "content": "Then, weren't you there that day?", 
+    "end": 385.73, 
+    "start": 383.65
+  }, 
+  {
+    "content": "H-Hey...", 
+    "end": 386.9, 
+    "start": 385.73
+  }, 
+  {
+    "content": "Did you see the Colossal Titan?", 
+    "end": 389.32, 
+    "start": 386.9
+  }, 
+  {
+    "content": "Y-Yeah...", 
+    "end": 391.53, 
+    "start": 389.7
+  }, 
+  {
+    "content": "I already told you I saw it.", 
+    "end": 397.04, 
+    "start": 394.54
+  }, 
+  {
+    "content": "Really?", 
+    "end": 399.42, 
+    "start": 398.21
+  }, 
+  {
+    "content": "How big was it?", 
+    "end": 400.83, 
+    "start": 399.42
+  }, 
+  {
+    "content": "Big enough to look over the walls.", 
+    "end": 403.17, 
+    "start": 401.25
+  }, 
+  {
+    "content": "What? I heard it stepped right over them.", 
+    "end": 406.17, 
+    "start": 403.17
+  }, 
+  {
+    "content": "Me, too!", 
+    "end": 407.3, 
+    "start": 406.17
+  }, 
+  {
+    "content": "That's what they said in my village.", 
+    "end": 408.8, 
+    "start": 407.3
+  }, 
+  {
+    "content": "No, it wasn't that tall.", 
+    "end": 411.93, 
+    "start": 409.13
+  }, 
+  {
+    "content": "What did it look like?", 
+    "end": 413.39, 
+    "start": 411.93
+  }, 
+  {
+    "content": "It barely had any skin, \r\nbut it had a huge mouth.", 
+    "end": 417.56, 
+    "start": 414.14
+  }, 
+  {
+    "content": "What about the Armored Titan \r\nthat broke Wall Maria?", 
+    "end": 420.56, 
+    "start": 417.89
+  }, 
+  {
+    "content": "They call it that,", 
+    "end": 422.44, 
+    "start": 421.02
+  }, 
+  {
+    "content": "but it looked like a normal Titan to me.", 
+    "end": 425.36, 
+    "start": 422.86
+  }, 
+  {
+    "content": "Th-Then what's a normal Titan like?", 
+    "end": 427.86, 
+    "start": 425.61
+  }, 
+  {
+    "content": "Guys, let's stop with the questions.", 
+    "end": 439.62, 
+    "start": 436.95
+  }, 
+  {
+    "content": "I'm sure he'd prefer to forget some things.", 
+    "end": 441.87, 
+    "start": 439.96
+  }, 
+  {
+    "content": "I'm sorry for asking\u2014", 
+    "end": 443.96, 
+    "start": 442.37
+  }, 
+  {
+    "content": "Don't be!", 
+    "end": 444.67, 
+    "start": 443.96
+  }, 
+  {
+    "content": "The Titans aren't all that tough...", 
+    "end": 452.59, 
+    "start": 449.05
+  }, 
+  {
+    "content": "If we can master \r\nthe Three-Dimensional Maneuver Gear,", 
+    "end": 456.64, 
+    "start": 452.59
+  }, 
+  {
+    "content": "they won't stand a chance!", 
+    "end": 458.43, 
+    "start": 456.64
+  }, 
+  {
+    "content": "Finally, I'm able to train as a soldier...", 
+    "end": 461.48, 
+    "start": 458.89
+  }, 
+  {
+    "content": "I was just so excited, I forgot myself for a second.", 
+    "end": 464.27, 
+    "start": 461.98
+  }, 
+  {
+    "content": "I'm joining the Survey Corps, so I can \r\nwipe the Titans off the face of this earth.", 
+    "end": 468.73, 
+    "start": 464.81
+  }, 
+  {
+    "content": "I'll kill them all\u2014", 
+    "end": 470.57, 
+    "start": 469.15
+  }, 
+  {
+    "content": "Hey, are you nuts?", 
+    "end": 472.07, 
+    "start": 470.57
+  }, 
+  {
+    "content": "Did you just say you want \r\nto join the Survey Corps?", 
+    "end": 476.53, 
+    "start": 473.07
+  }, 
+  {
+    "content": "Yeah, I did.", 
+    "end": 478.62, 
+    "start": 477.12
+  }, 
+  {
+    "content": "And you said you wanted to join the \r\nMilitary Police to take it easy, right?", 
+    "end": 483.5, 
+    "start": 479.5
+  }, 
+  {
+    "content": "I'm no liar...", 
+    "end": 486.38, 
+    "start": 484.0
+  }, 
+  {
+    "content": "I'm a straight talker, unlike someone \r\nwho pretends to have balls of steel,", 
+    "end": 490.09, 
+    "start": 486.38
+  }, 
+  {
+    "content": "even when he's about to piss himself.", 
+    "end": 492.01, 
+    "start": 490.09
+  }, 
+  {
+    "content": "Are you talking about me?", 
+    "end": 495.18, 
+    "start": 493.76
+  }, 
+  {
+    "content": "D-Don't...", 
+    "end": 496.68, 
+    "start": 495.18
+  }, 
+  {
+    "content": "Hey, I didn't...", 
+    "end": 499.72, 
+    "start": 497.18
+  }, 
+  {
+    "content": "Well, I'm sorry.", 
+    "end": 511.53, 
+    "start": 509.78
+  }, 
+  {
+    "content": "I didn't want to say you're \r\ndoing the wrong thing.", 
+    "end": 514.66, 
+    "start": 511.9
+  }, 
+  {
+    "content": "Peace?", 
+    "end": 516.74, 
+    "start": 515.49
+  }, 
+  {
+    "content": "Yeah.", 
+    "end": 519.74, 
+    "start": 518.78
+  }, 
+  {
+    "content": "I'm sorry, too.", 
+    "end": 520.76, 
+    "start": 519.74
+  }, 
+  {
+    "content": "Hey, you...", 
+    "end": 537.47, 
+    "start": 536.43
+  }, 
+  {
+    "content": "W-W-Well, uh...", 
+    "end": 542.81, 
+    "start": 538.89
+  }, 
+  {
+    "content": "It's just that you look \r\ndifferent than the rest of us.", 
+    "end": 545.77, 
+    "start": 542.81
+  }, 
+  {
+    "content": "I'm s-sorry...", 
+    "end": 548.61, 
+    "start": 546.44
+  }, 
+  {
+    "content": "Your hair is very pretty.", 
+    "end": 550.77, 
+    "start": 548.61
+  }, 
+  {
+    "content": "Thank you.", 
+    "end": 552.32, 
+    "start": 551.4
+  }, 
+  {
+    "content": "I'm fine, leave me alone.", 
+    "end": 563.58, 
+    "start": 561.66
+  }, 
+  {
+    "content": "You're always so impulsive when you're riled up.", 
+    "end": 566.46, 
+    "start": 564.08
+  }, 
+  {
+    "content": "This again?", 
+    "end": 568.46, 
+    "start": 566.96
+  }, 
+  {
+    "content": "Anyway, isn't your hair a little long?", 
+    "end": 572.3, 
+    "start": 568.96
+  }, 
+  {
+    "content": "It could cause an accident when you're \r\npracticing with the Maneuver Gear.", 
+    "end": 575.88, 
+    "start": 572.84
+  }, 
+  {
+    "content": "Very well.", 
+    "end": 577.55, 
+    "start": 576.47
+  }, 
+  {
+    "content": "I'll cut it.", 
+    "end": 578.47, 
+    "start": 577.8
+  }, 
+  {
+    "content": "But how short should it be?", 
+    "end": 582.06, 
+    "start": 579.47
+  }, 
+  {
+    "content": "H-Hey!", 
+    "end": 587.73, 
+    "start": 586.73
+  }, 
+  {
+    "content": "That's my shirt!", 
+    "end": 589.81, 
+    "start": 587.73
+  }, 
+  {
+    "content": "What did you wipe on my shirt?", 
+    "end": 591.57, 
+    "start": 589.81
+  }, 
+  {
+    "content": "My trust.", 
+    "end": 596.03, 
+    "start": 593.15
+  }, 
+  {
+    "content": "Finally done...", 
+    "end": 601.87, 
+    "start": 599.66
+  }, 
+  {
+    "content": "This is...", 
+    "end": 624.22, 
+    "start": 622.93
+  }, 
+  {
+    "content": "Bread!", 
+    "end": 625.22, 
+    "start": 624.22
+  }, 
+  {
+    "content": "That's all I could get, but I saved it for you...", 
+    "end": 628.19, 
+    "start": 625.22
+  }, 
+  {
+    "content": "But you should drink some water first.", 
+    "end": 633.07, 
+    "start": 629.35
+  }, 
+  {
+    "content": "Are you god?!", 
+    "end": 639.35, 
+    "start": 637.19
+  }, 
+  {
+    "content": "God!", 
+    "end": 641.03, 
+    "start": 639.65
+  }, 
+  {
+    "content": "Hey, what are you two doing?", 
+    "end": 643.37, 
+    "start": 641.03
+  }, 
+  {
+    "content": "Um, she spent the whole day running...", 
+    "end": 649.74, 
+    "start": 645.2
+  }, 
+  {
+    "content": "So you're trying to do a good deed?", 
+    "end": 652.79, 
+    "start": 649.74
+  }, 
+  {
+    "content": "Did you do that for the potato girl?", 
+    "end": 661.97, 
+    "start": 659.47
+  }, 
+  {
+    "content": "Was the effort worth what you got out of it?", 
+    "end": 665.56, 
+    "start": 662.39
+  }, 
+  {
+    "content": "Well, it doesn't matter...", 
+    "end": 670.6, 
+    "start": 669.48
+  }, 
+  {
+    "content": "Anyway, I'm carrying her to bed.", 
+    "end": 674.65, 
+    "start": 671.94
+  }, 
+  {
+    "content": "Are you doing a good deed, too?", 
+    "end": 678.61, 
+    "start": 676.23
+  }, 
+  {
+    "content": "I'm doing her a favor so she'll owe me.", 
+    "end": 681.86, 
+    "start": 679.15
+  }, 
+  {
+    "content": "I'm looking forward to \r\na lot of fun from this idiot.", 
+    "end": 684.91, 
+    "start": 682.45
+  }, 
+  {
+    "content": "First, we'll evaluate what you have!", 
+    "end": 691.75, 
+    "start": 689.5
+  }, 
+  {
+    "content": "Anyone unable to do this can't \r\neven serve as a decoy!", 
+    "end": 694.79, 
+    "start": 692.17
+  }, 
+  {
+    "content": "They will be sent to the frontier.", 
+    "end": 697.25, 
+    "start": 695.34
+  }, 
+  {
+    "content": "These involve only the rudimentary basics,", 
+    "end": 701.25, 
+    "start": 698.83
+  }, 
+  {
+    "content": "but even at this stage, you can see their \r\npotential with the Maneuver Gear.", 
+    "end": 704.76, 
+    "start": 701.25
+  }, 
+  {
+    "content": "Look.", 
+    "end": 706.85, 
+    "start": 705.88
+  }, 
+  {
+    "content": "She's steady as a rock.", 
+    "end": 709.31, 
+    "start": 707.6
+  }, 
+  {
+    "content": "She knows exactly what to do.", 
+    "end": 712.6, 
+    "start": 709.85
+  }, 
+  {
+    "content": "That's what I mean by potential.", 
+    "end": 715.65, 
+    "start": 713.65
+  }, 
+  {
+    "content": "Looks like we have a lot of talent this year.", 
+    "end": 719.65, 
+    "start": 716.9
+  }, 
+  {
+    "content": "Um, what about him?", 
+    "end": 721.32, 
+    "start": 719.82
+  }, 
+  {
+    "content": "That's exactly my point.", 
+    "end": 725.03, 
+    "start": 722.66
+  }, 
+  {
+    "content": "You may have the will,", 
+    "end": 727.28, 
+    "start": 725.57
+  }, 
+  {
+    "content": "but not necessarily the talent.", 
+    "end": 730.62, 
+    "start": 727.91
+  }, 
+  {
+    "content": "What are you doing, Eren Jaeger?!", 
+    "end": 733.25, 
+    "start": 731.29
+  }, 
+  {
+    "content": "Pick yourself up!", 
+    "end": 734.5, 
+    "start": 733.25
+  }, 
+  {
+    "content": "What is this?", 
+    "end": 737.42, 
+    "start": 736.29
+  }, 
+  {
+    "content": "How am I supposed to do this?", 
+    "end": 739.51, 
+    "start": 737.67
+  }, 
+  {
+    "content": "This can't be happening...", 
+    "end": 741.8, 
+    "start": 740.42
+  }, 
+  {
+    "content": "Information We Can Share So Far: \r\nThree-Dimensional Maneuver Gear Training (1) \r\nThree-Dimensional Maneuver Gear Training is \r\na difficult process, meant to force the trainee to \r\n adapt from moving in a flat 2D plane to a 3D space.", 
+    "end": 747.97, 
+    "start": 742.97
+  }, 
+  {
+    "content": "Information We Can Share So Far: \r\nThree-Dimensional Maneuver Gear Training (2) \r\nHigh endurance, strong legs, \r\ngood spatial awareness, \r\nand nerves of steel are requisites.", 
+    "end": 752.98, 
+    "start": 747.97
+  }, 
+  {
+    "content": "Stick to the basics, and you should be fine.", 
+    "end": 756.94, 
+    "start": 754.98
+  }, 
+  {
+    "content": "Don't worry about doing well.", 
+    "end": 759.62, 
+    "start": 757.73
+  }, 
+  {
+    "content": "Watch the balance and stay centered.", 
+    "end": 762.15, 
+    "start": 760.11
+  }, 
+  {
+    "content": "Slowly rest your weight on the belts \r\nattached to your hips and feet.", 
+    "end": 765.99, 
+    "start": 762.57
+  }, 
+  {
+    "content": "Stay calm, and you can do it.", 
+    "end": 768.33, 
+    "start": 766.41
+  }, 
+  {
+    "content": "I was able to.", 
+    "end": 770.2, 
+    "start": 768.33
+  }, 
+  {
+    "content": "Okay, I think I can do it this time!", 
+    "end": 773.29, 
+    "start": 770.37
+  }, 
+  {
+    "content": "Raise me, Armin!", 
+    "end": 774.67, 
+    "start": 773.29
+  }, 
+  {
+    "content": "Hey, Daz...", 
+    "end": 791.1, 
+    "start": 790.06
+  }, 
+  {
+    "content": "Isn't that the kid", 
+    "end": 792.93, 
+    "start": 791.47
+  }, 
+  {
+    "content": "from yesterday who said \r\nhe'd kill all the Titans?", 
+    "end": 795.98, 
+    "start": 792.93
+  }, 
+  {
+    "content": "Well, I bet he'll be off to the frontier tomorrow.", 
+    "end": 799.69, 
+    "start": 796.56
+  }, 
+  {
+    "content": "We don't have enough food \r\nto feed worthless rejects.", 
+    "end": 802.15, 
+    "start": 799.69
+  }, 
+  {
+    "content": "Eren...", 
+    "end": 802.94, 
+    "start": 802.15
+  }, 
+  {
+    "content": "There's no point in worrying.", 
+    "end": 806.78, 
+    "start": 804.74
+  }, 
+  {
+    "content": "You just have to figure it out tomorrow.", 
+    "end": 809.16, 
+    "start": 806.78
+  }, 
+  {
+    "content": "I'm pathetic...", 
+    "end": 811.12, 
+    "start": 809.83
+  }, 
+  {
+    "content": "I'll never be able to kill them all like this.", 
+    "end": 815.25, 
+    "start": 811.79
+  }, 
+  {
+    "content": "You should let that idea go.", 
+    "end": 817.5, 
+    "start": 815.25
+  }, 
+  {
+    "content": "What?!", 
+    "end": 819.67, 
+    "start": 818.5
+  }, 
+  {
+    "content": "You should give up on being a soldier.", 
+    "end": 822.67, 
+    "start": 820.13
+  }, 
+  {
+    "content": "There are other ways to fight than \r\nby throwing away your life.", 
+    "end": 827.13, 
+    "start": 823.17
+  }, 
+  {
+    "content": "Listen here...", 
+    "end": 828.51, 
+    "start": 827.13
+  }, 
+  {
+    "content": "I saw what happened that day!", 
+    "end": 831.51, 
+    "start": 828.51
+  }, 
+  {
+    "content": "You really think you'll convince me this way?", 
+    "end": 834.14, 
+    "start": 831.51
+  }, 
+  {
+    "content": "But it doesn't matter how much you want it.", 
+    "end": 837.65, 
+    "start": 834.48
+  }, 
+  {
+    "content": "Why not?", 
+    "end": 839.36, 
+    "start": 838.44
+  }, 
+  {
+    "content": "It isn't your decision whether you \r\nend up a soldier or not, Eren.", 
+    "end": 843.82, 
+    "start": 839.98
+  }, 
+  {
+    "content": "I'm not saying you should return \r\nto the frontier alone.", 
+    "end": 855.66, 
+    "start": 851.2
+  }, 
+  {
+    "content": "{\\an8}Let's go, Armin.", 
+    "end": 853.62, 
+    "start": 852.37
+  }, 
+  {
+    "content": "{\\an8}S-Sure.", 
+    "end": 855.04, 
+    "start": 853.62
+  }, 
+  {
+    "content": "Don't worry...", 
+    "end": 857.79, 
+    "start": 856.12
+  }, 
+  {
+    "content": "I will go with you.", 
+    "end": 861.29, 
+    "start": 858.26
+  }, 
+  {
+    "content": "Um, anyway...", 
+    "end": 869.22, 
+    "start": 866.51
+  }, 
+  {
+    "content": "So, can I take that?", 
+    "end": 872.6, 
+    "start": 869.89
+  }, 
+  {
+    "content": "The trick to staying upright?", 
+    "end": 893.24, 
+    "start": 891.03
+  }, 
+  {
+    "content": "Sorry, but I'm a genius.", 
+    "end": 895.83, 
+    "start": 893.62
+  }, 
+  {
+    "content": "All I can say is to feel it.", 
+    "end": 897.34, 
+    "start": 895.83
+  }, 
+  {
+    "content": "Actually, I'd like you to tell me...", 
+    "end": 900.08, 
+    "start": 897.66
+  }, 
+  {
+    "content": "How are you still sane, after you \r\nhumiliated yourself like that?", 
+    "end": 904.8, 
+    "start": 900.08
+  }, 
+  {
+    "content": "Guys, I'm begging you here...", 
+    "end": 908.84, 
+    "start": 905.09
+  }, 
+  {
+    "content": "But didn't you say just yesterday", 
+    "end": 910.93, 
+    "start": 908.84
+  }, 
+  {
+    "content": "something like, \"People who aren't \r\nstrong enough should leave\"?", 
+    "end": 913.76, 
+    "start": 910.93
+  }, 
+  {
+    "content": "Am I wrong?", 
+    "end": 916.35, 
+    "start": 914.89
+  }, 
+  {
+    "content": "Or was it, \"If you don't have the \r\ntalent, you have to leave\"?", 
+    "end": 919.02, 
+    "start": 916.35
+  }, 
+  {
+    "content": "Which was it?", 
+    "end": 920.64, 
+    "start": 919.48
+  }, 
+  {
+    "content": "Please!", 
+    "end": 922.81, 
+    "start": 921.67
+  }, 
+  {
+    "content": "I've heard you two are really good!", 
+    "end": 924.94, 
+    "start": 922.81
+  }, 
+  {
+    "content": "Bertolt... Reiner!", 
+    "end": 927.15, 
+    "start": 925.36
+  }, 
+  {
+    "content": "Sorry, but I can't imagine any \r\ntrick to just hanging there.", 
+    "end": 931.6, 
+    "start": 927.99
+  }, 
+  {
+    "content": "I don't think I can give you the \r\nadvice you're looking for.", 
+    "end": 934.83, 
+    "start": 932.08
+  }, 
+  {
+    "content": "Okay...", 
+    "end": 936.58, 
+    "start": 935.41
+  }, 
+  {
+    "content": "We'll just have to hope for the best tomorrow.", 
+    "end": 938.79, 
+    "start": 936.58
+  }, 
+  {
+    "content": "You two are from Zhiganshina, aren't you?", 
+    "end": 943.96, 
+    "start": 940.33
+  }, 
+  {
+    "content": "Yes... Why?", 
+    "end": 945.75, 
+    "start": 944.54
+  }, 
+  {
+    "content": "Then you should know how \r\nterrifying the Titans are.", 
+    "end": 948.75, 
+    "start": 945.92
+  }, 
+  {
+    "content": "Why did you decide to be soldiers?", 
+    "end": 951.47, 
+    "start": 949.09
+  }, 
+  {
+    "content": "I'm not like Eren.", 
+    "end": 955.97, 
+    "start": 953.97
+  }, 
+  {
+    "content": "I didn't see them at close range.", 
+    "end": 959.68, 
+    "start": 955.97
+  }, 
+  {
+    "content": "But when I thought about how the government", 
+    "end": 963.35, 
+    "start": 960.14
+  }, 
+  {
+    "content": "forced people into that insane plan \r\nto retake Titan territory,", 
+    "end": 966.02, 
+    "start": 963.35
+  }, 
+  {
+    "content": "I had to do something.", 
+    "end": 967.86, 
+    "start": 966.02
+  }, 
+  {
+    "content": "I see.", 
+    "end": 969.36, 
+    "start": 968.23
+  }, 
+  {
+    "content": "Where are you two from?", 
+    "end": 971.9, 
+    "start": 969.94
+  }, 
+  {
+    "content": "Reiner and I come from a small village \r\nin the mountains of southeast Wall Maria.", 
+    "end": 977.37, 
+    "start": 972.57
+  }, 
+  {
+    "content": "But... That means...", 
+    "end": 979.5, 
+    "start": 977.61
+  }, 
+  {
+    "content": "Yeah.", 
+    "end": 980.54, 
+    "start": 979.5
+  }, 
+  {
+    "content": "It isn't like the big towns by the rivers...", 
+    "end": 983.37, 
+    "start": 981.0
+  }, 
+  {
+    "content": "The news was slow to reach us.", 
+    "end": 985.35, 
+    "start": 983.37
+  }, 
+  {
+    "content": "In fact, the Titans reached us first.", 
+    "end": 989.51, 
+    "start": 985.99
+  }, 
+  {
+    "content": "It was dawn...", 
+    "end": 992.09, 
+    "start": 990.8
+  }, 
+  {
+    "content": "The animals were unusually restless,", 
+    "end": 995.25, 
+    "start": 993.3
+  }, 
+  {
+    "content": "and we heard a rumbling \r\nwe'd never heard before.", 
+    "end": 999.01, 
+    "start": 995.8
+  }, 
+  {
+    "content": "Eventually, as it got louder, \r\nwe realized it was the sound of footsteps.", 
+    "end": 1004.27, 
+    "start": 1000.1
+  }, 
+  {
+    "content": "And when I rushed to open the window...", 
+    "end": 1007.94, 
+    "start": 1004.98
+  }, 
+  {
+    "content": "Beyond that,", 
+    "end": 1018.37, 
+    "start": 1016.74
+  }, 
+  {
+    "content": "I don't really remember.", 
+    "end": 1021.29, 
+    "start": 1018.37
+  }, 
+  {
+    "content": "Everyone was in a panic.", 
+    "end": 1023.83, 
+    "start": 1022.0
+  }, 
+  {
+    "content": "Hey...", 
+    "end": 1024.67, 
+    "start": 1023.83
+  }, 
+  {
+    "content": "Why are you discussing this now?", 
+    "end": 1026.93, 
+    "start": 1024.67
+  }, 
+  {
+    "content": "I'm sorry...", 
+    "end": 1028.43, 
+    "start": 1027.45
+  }, 
+  {
+    "content": "What I meant to say is this:", 
+    "end": 1031.8, 
+    "start": 1028.96
+  }, 
+  {
+    "content": "you aren't like the others.", 
+    "end": 1035.08, 
+    "start": 1031.8
+  }, 
+  {
+    "content": "The others?", 
+    "end": 1037.01, 
+    "start": 1035.93
+  }, 
+  {
+    "content": "Those here who don't understand how \r\nterrifying the Titans really are.", 
+    "end": 1040.72, 
+    "start": 1037.01
+  }, 
+  {
+    "content": "Enough.", 
+    "end": 1041.85, 
+    "start": 1040.72
+  }, 
+  {
+    "content": "The vast majority are here \r\nbecause they don't want to lose face.", 
+    "end": 1053.32, 
+    "start": 1048.23
+  }, 
+  {
+    "content": "Told they'd be admitting they were \r\ncowards if they chose to be workers", 
+    "end": 1058.16, 
+    "start": 1054.15
+  }, 
+  {
+    "content": "after turning twelve, \r\nthey became trainees.", 
+    "end": 1060.6, 
+    "start": 1058.16
+  }, 
+  {
+    "content": "But we're not really so different.", 
+    "end": 1065.79, 
+    "start": 1062.16
+  }, 
+  {
+    "content": "We chose this hoping to join the Military Police \r\nbecause they're safe, deep in the Interior.", 
+    "end": 1070.97, 
+    "start": 1066.58
+  }, 
+  {
+    "content": "If that doesn't work, we may just give it all up.", 
+    "end": 1074.91, 
+    "start": 1071.59
+  }, 
+  {
+    "content": "I don't have any will of my own...", 
+    "end": 1078.34, 
+    "start": 1075.8
+  }, 
+  {
+    "content": "There's nothing wrong with valuing your own life.", 
+    "end": 1083.93, 
+    "start": 1079.72
+  }, 
+  {
+    "content": "I just want", 
+    "end": 1087.9, 
+    "start": 1087.02
+  }, 
+  {
+    "content": "to return to the homeland I lost.", 
+    "end": 1091.02, 
+    "start": 1088.83
+  }, 
+  {
+    "content": "That's all I have left to go on.", 
+    "end": 1093.6, 
+    "start": 1091.52
+  }, 
+  {
+    "content": "I'm going back, no matter what.", 
+    "end": 1097.58, 
+    "start": 1095.19
+  }, 
+  {
+    "content": "You...", 
+    "end": 1101.2, 
+    "start": 1100.12
+  }, 
+  {
+    "content": "Why did you become a soldier?", 
+    "end": 1104.2, 
+    "start": 1102.49
+  }, 
+  {
+    "content": "I...", 
+    "end": 1107.67, 
+    "start": 1106.71
+  }, 
+  {
+    "content": "I decided I had to kill them.", 
+    "end": 1115.01, 
+    "start": 1113.0
+  }, 
+  {
+    "content": "I had to kill all the Titans myself...", 
+    "end": 1119.97, 
+    "start": 1116.34
+  }, 
+  {
+    "content": "That was what I decided.", 
+    "end": 1122.39, 
+    "start": 1120.26
+  }, 
+  {
+    "content": "So even after seeing the Titans, \r\nyou didn't surrender to despair?", 
+    "end": 1131.44, 
+    "start": 1127.18
+  }, 
+  {
+    "content": "No.", 
+    "end": 1132.82, 
+    "start": 1131.77
+  }, 
+  {
+    "content": "Though I don't know if \r\nI can even become a soldier now.", 
+    "end": 1137.03, 
+    "start": 1132.82
+  }, 
+  {
+    "content": "Review and recheck everything, \r\nstarting with your belt.", 
+    "end": 1159.63, 
+    "start": 1157.21
+  }, 
+  {
+    "content": "Tomorrow will go fine.", 
+    "end": 1161.05, 
+    "start": 1159.63
+  }, 
+  {
+    "content": "You can do it.", 
+    "end": 1164.3, 
+    "start": 1162.56
+  }, 
+  {
+    "content": "Eren Jaeger, was it?", 
+    "end": 1167.25, 
+    "start": 1164.9
+  }, 
+  {
+    "content": "Yes, thank you.", 
+    "end": 1169.68, 
+    "start": 1167.98
+  }, 
+  {
+    "content": "Reiner Braun, right?", 
+    "end": 1172.44, 
+    "start": 1170.56
+  }, 
+  {
+    "content": "Eren Jaeger, are you ready?", 
+    "end": 1185.99, 
+    "start": 1182.87
+  }, 
+  {
+    "content": "Yes!", 
+    "end": 1187.08, 
+    "start": 1185.99
+  }, 
+  {
+    "content": "I'll do this...", 
+    "end": 1188.2, 
+    "start": 1187.08
+  }, 
+  {
+    "content": "I can do this!", 
+    "end": 1189.45, 
+    "start": 1188.41
+  }, 
+  {
+    "content": "I may not have talent,", 
+    "end": 1192.75, 
+    "start": 1190.37
+  }, 
+  {
+    "content": "but I have more guts than anyone.", 
+    "end": 1195.5, 
+    "start": 1193.38
+  }, 
+  {
+    "content": "Begin!", 
+    "end": 1198.09, 
+    "start": 1197.0
+  }, 
+  {
+    "content": "I don't know the theory...", 
+    "end": 1207.43, 
+    "start": 1206.01
+  }, 
+  {
+    "content": "I don't have any evidence.", 
+    "end": 1209.39, 
+    "start": 1207.97
+  }, 
+  {
+    "content": "But this is all I've got!", 
+    "end": 1212.69, 
+    "start": 1209.85
+  }, 
+  {
+    "content": "This is my weapon!", 
+    "end": 1216.4, 
+    "start": 1213.65
+  }, 
+  {
+    "content": "I did it.", 
+    "end": 1222.11, 
+    "start": 1221.28
+  }, 
+  {
+    "content": "I did it!", 
+    "end": 1223.66, 
+    "start": 1222.74
+  }, 
+  {
+    "content": "N-Not yet...", 
+    "end": 1235.42, 
+    "start": 1233.58
+  }, 
+  {
+    "content": "I'm not giving up yet!", 
+    "end": 1237.88, 
+    "start": 1235.88
+  }, 
+  {
+    "content": "Put him down.", 
+    "end": 1240.8, 
+    "start": 1239.59
+  }, 
+  {
+    "content": "I... I...", 
+    "end": 1248.13, 
+    "start": 1245.56
+  }, 
+  {
+    "content": "Wagner, change belts with Jaeger.", 
+    "end": 1252.52, 
+    "start": 1249.26
+  }, 
+  {
+    "content": "Y-Yes, sir.", 
+    "end": 1253.58, 
+    "start": 1252.52
+  }, 
+  {
+    "content": "Your equipment was defective.", 
+    "end": 1263.3, 
+    "start": 1261.69
+  }, 
+  {
+    "content": "The fitting on your belt was damaged.", 
+    "end": 1268.12, 
+    "start": 1264.49
+  }, 
+  {
+    "content": "I've never heard of this part getting damaged.", 
+    "end": 1271.44, 
+    "start": 1268.58
+  }, 
+  {
+    "content": "I'll have to add it to the maintenance checklist.", 
+    "end": 1274.96, 
+    "start": 1272.04
+  }, 
+  {
+    "content": "So, he managed to stay upright for \r\na bit, even with a broken belt?", 
+    "end": 1278.92, 
+    "start": 1275.25
+  }, 
+  {
+    "content": "Wow...", 
+    "end": 1280.42, 
+    "start": 1278.92
+  }, 
+  {
+    "content": "Th-Then, did I pass?", 
+    "end": 1283.38, 
+    "start": 1280.59
+  }, 
+  {
+    "content": "You're fine.", 
+    "end": 1285.55, 
+    "start": 1284.3
+  }, 
+  {
+    "content": "Commence training.", 
+    "end": 1287.34, 
+    "start": 1285.93
+  }, 
+  {
+    "content": "I did it! I really did it!", 
+    "end": 1290.56, 
+    "start": 1288.43
+  }, 
+  {
+    "content": "Did you see that, Mikasa?", 
+    "end": 1292.73, 
+    "start": 1291.27
+  }, 
+  {
+    "content": "I can do this!", 
+    "end": 1293.68, 
+    "start": 1292.73
+  }, 
+  {
+    "content": "I can fight the Titans!", 
+    "end": 1296.15, 
+    "start": 1294.35
+  }, 
+  {
+    "content": "I don't need you taking care of me anymore!", 
+    "end": 1299.99, 
+    "start": 1297.02
+  }, 
+  {
+    "content": "I guess it all worked out.", 
+    "end": 1303.36, 
+    "start": 1301.57
+  }, 
+  {
+    "content": "He's looking at us, as if to say, \"See!\"", 
+    "end": 1305.74, 
+    "start": 1303.78
+  }, 
+  {
+    "content": "No...", 
+    "end": 1306.82, 
+    "start": 1306.16
+  }, 
+  {
+    "content": "He's relieved because he thinks we \r\nwon't have to be separated now.", 
+    "end": 1313.37, 
+    "start": 1309.03
+  }, 
+  {
+    "content": "Grisha...", 
+    "end": 1318.14, 
+    "start": 1317.09
+  }, 
+  {
+    "content": "Today, your son", 
+    "end": 1320.71, 
+    "start": 1318.7
+  }, 
+  {
+    "content": "became a soldier.", 
+    "end": 1322.96, 
+    "start": 1321.35
+  }, 
+  {
+    "content": "Eren graduates from the Trainee Corps,", 
+    "end": 1439.25, 
+    "start": 1436.47
+  }, 
+  {
+    "content": "and he sees humanity regain its dignity.", 
+    "end": 1442.32, 
+    "start": 1439.25
+  }, 
+  {
+    "content": "\"We can defeat the Titans.\"", 
+    "end": 1444.35, 
+    "start": 1442.96
+  }, 
+  {
+    "content": "Just as he becomes sure of this,", 
+    "end": 1447.02, 
+    "start": 1444.93
+  }, 
+  {
+    "content": "humanity learns a lesson once again.", 
+    "end": 1449.25, 
+    "start": 1447.02
+  }, 
+  {
+    "content": "Night of the Graduation Ceremony \r\nHumanity Rises Again (2)\r\n\r\n", 
+    "end": 1450.38, 
+    "start": 1447.76
+  }
+]

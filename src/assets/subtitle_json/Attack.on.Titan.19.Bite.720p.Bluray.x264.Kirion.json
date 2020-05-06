@@ -1,0 +1,1672 @@
+[
+  {
+    "content": "Draw your blades.", 
+    "end": 5.35, 
+    "start": 3.77
+  }, 
+  {
+    "content": "If we see it, it'll only be for a second.", 
+    "end": 10.47, 
+    "start": 6.48
+  }, 
+  {
+    "content": "Go!", 
+    "end": 18.49, 
+    "start": 17.32
+  }, 
+  {
+    "content": "It's fast!", 
+    "end": 33.3, 
+    "start": 32.42
+  }, 
+  {
+    "content": "In these trees, there's no way to \r\nforesee and evade its attacks!", 
+    "end": 36.29, 
+    "start": 33.3
+  }, 
+  {
+    "content": "It'll catch us!", 
+    "end": 37.34, 
+    "start": 36.29
+  }, 
+  {
+    "content": "Captain, let's switch to Maneuver Gear!", 
+    "end": 39.51, 
+    "start": 37.6
+  }, 
+  {
+    "content": "Captain!", 
+    "end": 41.39, 
+    "start": 40.1
+  }, 
+  {
+    "content": "You won't escape!", 
+    "end": 44.89, 
+    "start": 43.37
+  }, 
+  {
+    "content": "Reinforcements from the rear!", 
+    "end": 46.82, 
+    "start": 45.39
+  }, 
+  {
+    "content": "Captain, your orders?!", 
+    "end": 64.62, 
+    "start": 62.64
+  }, 
+  {
+    "content": "Let's go for it!", 
+    "end": 65.79, 
+    "start": 64.62
+  }, 
+  {
+    "content": "It's dangerous...", 
+    "end": 67.29, 
+    "start": 65.79
+  }, 
+  {
+    "content": "We should kill it!", 
+    "end": 68.99, 
+    "start": 67.29
+  }, 
+  {
+    "content": "At this rate, it <i>will</i> catch up with us!", 
+    "end": 70.78, 
+    "start": 68.99
+  }, 
+  {
+    "content": "We kill it here...", 
+    "end": 71.92, 
+    "start": 70.78
+  }, 
+  {
+    "content": "That's why we came to this forest!", 
+    "end": 74.2, 
+    "start": 72.27
+  }, 
+  {
+    "content": "Right, Captain?", 
+    "end": 76.18, 
+    "start": 74.2
+  }, 
+  {
+    "content": "Captain, your orders!", 
+    "end": 78.29, 
+    "start": 76.18
+  }, 
+  {
+    "content": "Everyone, cover your ears.", 
+    "end": 83.5, 
+    "start": 81.29
+  }, 
+  {
+    "content": "Bite \r\n 57th Expedition Beyond the Walls (3)", 
+    "end": 197.0, 
+    "start": 192.0
+  }, 
+  {
+    "content": "A noise grenade?", 
+    "end": 206.51, 
+    "start": 205.26
+  }, 
+  {
+    "content": "What is your job?", 
+    "end": 209.16, 
+    "start": 207.51
+  }, 
+  {
+    "content": "To just let yourself be swayed by whatever \r\nyou're feeling at the moment?", 
+    "end": 212.52, 
+    "start": 209.55
+  }, 
+  {
+    "content": "No, it's not.", 
+    "end": 214.7, 
+    "start": 212.92
+  }, 
+  {
+    "content": "Our squad's job", 
+    "end": 216.52, 
+    "start": 215.18
+  }, 
+  {
+    "content": "is to keep the brat from getting \r\na single scratch on him.", 
+    "end": 220.66, 
+    "start": 216.92
+  }, 
+  {
+    "content": "Even if it costs our lives.", 
+    "end": 223.03, 
+    "start": 221.61
+  }, 
+  {
+    "content": "It wasn't to keep watch on me?", 
+    "end": 229.16, 
+    "start": 226.96
+  }, 
+  {
+    "content": "We keep going on our horses, got it?", 
+    "end": 232.83, 
+    "start": 229.34
+  }, 
+  {
+    "content": "Roger!", 
+    "end": 234.14, 
+    "start": 233.04
+  }, 
+  {
+    "content": "Keep going? For how long?", 
+    "end": 238.17, 
+    "start": 235.29
+  }, 
+  {
+    "content": "And it's right on top of us...", 
+    "end": 241.4, 
+    "start": 238.56
+  }, 
+  {
+    "content": "Again!", 
+    "end": 244.18, 
+    "start": 243.07
+  }, 
+  {
+    "content": "The reinforcements!", 
+    "end": 245.97, 
+    "start": 244.89
+  }, 
+  {
+    "content": "If we don't help, they'll be wiped out again!", 
+    "end": 248.43, 
+    "start": 245.97
+  }, 
+  {
+    "content": "Eren, eyes on the road!", 
+    "end": 250.27, 
+    "start": 248.6
+  }, 
+  {
+    "content": "Sir!", 
+    "end": 251.48, 
+    "start": 250.64
+  }, 
+  {
+    "content": "Keep your pace up...", 
+    "end": 253.56, 
+    "start": 252.1
+  }, 
+  {
+    "content": "Stay at top speed!", 
+    "end": 255.1, 
+    "start": 253.56
+  }, 
+  {
+    "content": "But, sir...", 
+    "end": 255.94, 
+    "start": 255.1
+  }, 
+  {
+    "content": "Why?!", 
+    "end": 257.89, 
+    "start": 256.76
+  }, 
+  {
+    "content": "If Squad Levi doesn't defeat it, who will?", 
+    "end": 261.49, 
+    "start": 257.89
+  }, 
+  {
+    "content": "Another one's dead...", 
+    "end": 267.16, 
+    "start": 265.82
+  }, 
+  {
+    "content": "And maybe we could've saved him!", 
+    "end": 270.16, 
+    "start": 267.92
+  }, 
+  {
+    "content": "One's still fighting...", 
+    "end": 275.58, 
+    "start": 273.87
+  }, 
+  {
+    "content": "We could still make it!", 
+    "end": 276.92, 
+    "start": 275.58
+  }, 
+  {
+    "content": "Eren, eyes back on the road! Keep going!", 
+    "end": 279.25, 
+    "start": 277.13
+  }, 
+  {
+    "content": "Are you telling me to look away?", 
+    "end": 282.34, 
+    "start": 279.63
+  }, 
+  {
+    "content": "To abandon my comrades and run?!", 
+    "end": 285.3, 
+    "start": 282.34
+  }, 
+  {
+    "content": "Yes, that's right!", 
+    "end": 286.8, 
+    "start": 285.3
+  }, 
+  {
+    "content": "Obey the Captain's orders!", 
+    "end": 288.51, 
+    "start": 286.8
+  }, 
+  {
+    "content": "I don't understand why we're leaving them to die!", 
+    "end": 290.85, 
+    "start": 288.78
+  }, 
+  {
+    "content": "Or why he won't explain!", 
+    "end": 293.66, 
+    "start": 291.21
+  }, 
+  {
+    "content": "Why?!", 
+    "end": 294.52, 
+    "start": 293.66
+  }, 
+  {
+    "content": "That's because the Captain decided \r\nthe reason should not be explained.", 
+    "end": 297.94, 
+    "start": 294.89
+  }, 
+  {
+    "content": "You just don't understand because you're still green!", 
+    "end": 300.9, 
+    "start": 297.94
+  }, 
+  {
+    "content": "If you get it, then shut up and obey!", 
+    "end": 303.76, 
+    "start": 301.96
+  }, 
+  {
+    "content": "No...", 
+    "end": 309.78, 
+    "start": 308.84
+  }, 
+  {
+    "content": "I can fight on my own.", 
+    "end": 315.0, 
+    "start": 312.37
+  }, 
+  {
+    "content": "Why am I relying on others?", 
+    "end": 321.13, 
+    "start": 318.29
+  }, 
+  {
+    "content": "I can just fight on my own.", 
+    "end": 323.8, 
+    "start": 321.75
+  }, 
+  {
+    "content": "What are you doing, Eren?", 
+    "end": 329.09, 
+    "start": 327.76
+  }, 
+  {
+    "content": "You're only allowed to do that \r\nif your life is in danger.", 
+    "end": 334.14, 
+    "start": 330.47
+  }, 
+  {
+    "content": "You promised us!", 
+    "end": 335.81, 
+    "start": 334.14
+  }, 
+  {
+    "content": "Eren!", 
+    "end": 340.02, 
+    "start": 339.4
+  }, 
+  {
+    "content": "You aren't wrong.", 
+    "end": 343.15, 
+    "start": 341.41
+  }, 
+  {
+    "content": "If you want to, do it.", 
+    "end": 347.32, 
+    "start": 345.53
+  }, 
+  {
+    "content": "I can tell.", 
+    "end": 351.56, 
+    "start": 350.17
+  }, 
+  {
+    "content": "He's a real monster.", 
+    "end": 354.58, 
+    "start": 351.95
+  }, 
+  {
+    "content": "And it has nothing to do with his Titan power.", 
+    "end": 357.41, 
+    "start": 354.83
+  }, 
+  {
+    "content": "No matter what power you use to suppress him,", 
+    "end": 360.85, 
+    "start": 358.29
+  }, 
+  {
+    "content": "no matter what cage you put him in,", 
+    "end": 363.13, 
+    "start": 360.85
+  }, 
+  {
+    "content": "he will never submit to anyone.", 
+    "end": 367.5, 
+    "start": 363.46
+  }, 
+  {
+    "content": "{\\fad(1,417)}I just want to slaughter the Titans.", 
+    "end": 370.84, 
+    "start": 368.7
+  }, 
+  {
+    "content": "Eren, the difference between your \r\ndecision and ours is experience.", 
+    "end": 377.72, 
+    "start": 371.93
+  }, 
+  {
+    "content": "But you don't have to rely on that.", 
+    "end": 381.48, 
+    "start": 378.31
+  }, 
+  {
+    "content": "Choose.", 
+    "end": 383.82, 
+    "start": 382.62
+  }, 
+  {
+    "content": "Believe in yourself.", 
+    "end": 386.36, 
+    "start": 384.57
+  }, 
+  {
+    "content": "Or believe in the Survey Corps and me.", 
+    "end": 390.2, 
+    "start": 386.87
+  }, 
+  {
+    "content": "I don't know...", 
+    "end": 394.66, 
+    "start": 392.85
+  }, 
+  {
+    "content": "I never have.", 
+    "end": 396.19, 
+    "start": 394.66
+  }, 
+  {
+    "content": "I can believe in my own abilities", 
+    "end": 398.54, 
+    "start": 396.66
+  }, 
+  {
+    "content": "or the choices of companions I trust.", 
+    "end": 401.38, 
+    "start": 398.96
+  }, 
+  {
+    "content": "But no one ever knows how it will turn out.", 
+    "end": 404.88, 
+    "start": 402.5
+  }, 
+  {
+    "content": "So choose for yourself whichever \r\ndecision you'll regret least.", 
+    "end": 411.59, 
+    "start": 405.46
+  }, 
+  {
+    "content": "Eren!", 
+    "end": 430.15, 
+    "start": 429.24
+  }, 
+  {
+    "content": "Have faith!", 
+    "end": 433.57, 
+    "start": 432.45
+  }, 
+  {
+    "content": "I came up with a way that'd only half-kill you.", 
+    "end": 444.24, 
+    "start": 441.17
+  }, 
+  {
+    "content": "Sir?", 
+    "end": 446.3, 
+    "start": 445.42
+  }, 
+  {
+    "content": "I said I'd only be able to stop \r\nyou as a Titan if I killed you.", 
+    "end": 452.29, 
+    "start": 447.92
+  }, 
+  {
+    "content": "But this method would only badly wound you.", 
+    "end": 456.18, 
+    "start": 453.34
+  }, 
+  {
+    "content": "Of course, it relies on the squad's skill.", 
+    "end": 459.22, 
+    "start": 456.18
+  }, 
+  {
+    "content": "The idea is to cut you right out of the Titan's neck.", 
+    "end": 464.42, 
+    "start": 460.1
+  }, 
+  {
+    "content": "We'd end up cutting the ends \r\nof your arms and legs off,", 
+    "end": 468.81, 
+    "start": 465.08
+  }, 
+  {
+    "content": "but they'd just grow back like a lizard's...", 
+    "end": 472.38, 
+    "start": 469.28
+  }, 
+  {
+    "content": "Creepy, really.", 
+    "end": 473.65, 
+    "start": 472.38
+  }, 
+  {
+    "content": "Wait.", 
+    "end": 475.41, 
+    "start": 474.24
+  }, 
+  {
+    "content": "I don't know how they grow back.", 
+    "end": 478.99, 
+    "start": 476.24
+  }, 
+  {
+    "content": "Is there some other way...", 
+    "end": 480.62, 
+    "start": 478.99
+  }, 
+  {
+    "content": "So you're saying you don't want there \r\nto be any danger or sacrifice?", 
+    "end": 487.3, 
+    "start": 482.83
+  }, 
+  {
+    "content": "N-No...", 
+    "end": 489.0, 
+    "start": 487.63
+  }, 
+  {
+    "content": "Then just resolve yourself.", 
+    "end": 490.84, 
+    "start": 489.28
+  }, 
+  {
+    "content": "We will, too...", 
+    "end": 492.68, 
+    "start": 491.26
+  }, 
+  {
+    "content": "The danger for us is that you might kill us.", 
+    "end": 495.25, 
+    "start": 493.22
+  }, 
+  {
+    "content": "So don't worry.", 
+    "end": 497.3, 
+    "start": 495.69
+  }, 
+  {
+    "content": "Yes... Understood.", 
+    "end": 500.56, 
+    "start": 497.83
+  }, 
+  {
+    "content": "Th-Then, I can do experiments?", 
+    "end": 503.52, 
+    "start": 500.56
+  }, 
+  {
+    "content": "It's very risky.", 
+    "end": 505.9, 
+    "start": 503.96
+  }, 
+  {
+    "content": "But that doesn't mean that we \r\ncan't use him to investigate.", 
+    "end": 509.94, 
+    "start": 505.9
+  }, 
+  {
+    "content": "I can be in charge of planning this, right?", 
+    "end": 512.82, 
+    "start": 510.44
+  }, 
+  {
+    "content": "Eren, if there's something \r\nyou don't understand,", 
+    "end": 517.02, 
+    "start": 514.1
+  }, 
+  {
+    "content": "learn to understand it.", 
+    "end": 518.24, 
+    "start": 517.02
+  }, 
+  {
+    "content": "It's well worth any risk to our lives.", 
+    "end": 523.28, 
+    "start": 518.94
+  }, 
+  {
+    "content": "Ready, Eren?", 
+    "end": 528.62, 
+    "start": 526.56
+  }, 
+  {
+    "content": "When it's prepared, I'll use the \r\nsmoke round to notify you.", 
+    "end": 533.34, 
+    "start": 530.1
+  }, 
+  {
+    "content": "After that, any decisions are up to you.", 
+    "end": 536.01, 
+    "start": 533.66
+  }, 
+  {
+    "content": "Roger!", 
+    "end": 538.1, 
+    "start": 536.77
+  }, 
+  {
+    "content": "This dried-up well could hold \r\neven a mindless Titan...", 
+    "end": 544.79, 
+    "start": 539.59
+  }, 
+  {
+    "content": "Probably!", 
+    "end": 545.89, 
+    "start": 544.79
+  }, 
+  {
+    "content": "That's the signal.", 
+    "end": 549.66, 
+    "start": 548.44
+  }, 
+  {
+    "content": "Since I sealed the wall, I haven't \r\ntried to control the Titan.", 
+    "end": 554.8, 
+    "start": 551.15
+  }, 
+  {
+    "content": "If I lose control, Squad Levi \r\nmight kill me this time...", 
+    "end": 562.02, 
+    "start": 555.73
+  }, 
+  {
+    "content": "Did he not see the signal?", 
+    "end": 573.54, 
+    "start": 571.19
+  }, 
+  {
+    "content": "No...", 
+    "end": 574.88, 
+    "start": 573.98
+  }, 
+  {
+    "content": "His ability just isn't that reliable.", 
+    "end": 579.15, 
+    "start": 575.82
+  }, 
+  {
+    "content": "Hey, Eren! We're calling it quits for now.", 
+    "end": 584.89, 
+    "start": 581.84
+  }, 
+  {
+    "content": "Did something happen?", 
+    "end": 588.65, 
+    "start": 586.98
+  }, 
+  {
+    "content": "Hanji...", 
+    "end": 595.32, 
+    "start": 593.84
+  }, 
+  {
+    "content": "I can't become a Titan.", 
+    "end": 598.54, 
+    "start": 596.68
+  }, 
+  {
+    "content": "So your self-inflicted bite wounds on \r\nyour hands aren't healing, either?", 
+    "end": 608.08, 
+    "start": 605.04
+  }, 
+  {
+    "content": "No.", 
+    "end": 611.3, 
+    "start": 610.33
+  }, 
+  {
+    "content": "If you can't transform into a Titan,", 
+    "end": 614.74, 
+    "start": 612.0
+  }, 
+  {
+    "content": "our main goal of sealing Wall Maria is off the table.", 
+    "end": 618.32, 
+    "start": 614.74
+  }, 
+  {
+    "content": "This is an order...", 
+    "end": 621.39, 
+    "start": 619.73
+  }, 
+  {
+    "content": "Make it happen.", 
+    "end": 623.01, 
+    "start": 621.39
+  }, 
+  {
+    "content": "Yes, sir.", 
+    "end": 625.65, 
+    "start": 624.58
+  }, 
+  {
+    "content": "Don't let it get you down, Eren.", 
+    "end": 629.64, 
+    "start": 627.21
+  }, 
+  {
+    "content": "But...", 
+    "end": 631.67, 
+    "start": 630.3
+  }, 
+  {
+    "content": "Well, it just means you're \r\nmore human than I thought.", 
+    "end": 635.57, 
+    "start": 631.67
+  }, 
+  {
+    "content": "Better than rushing into \r\nsomething and getting killed.", 
+    "end": 640.81, 
+    "start": 637.57
+  }, 
+  {
+    "content": "This isn't meaningless.", 
+    "end": 642.7, 
+    "start": 641.26
+  }, 
+  {
+    "content": "Yeah...", 
+    "end": 644.22, 
+    "start": 643.1
+  }, 
+  {
+    "content": "We can't be too careful.", 
+    "end": 646.75, 
+    "start": 644.22
+  }, 
+  {
+    "content": "Why is everyone so calm?", 
+    "end": 652.56, 
+    "start": 649.22
+  }, 
+  {
+    "content": "Are they okay with my being \r\nunable to turn into a Titan?", 
+    "end": 656.54, 
+    "start": 653.89
+  }, 
+  {
+    "content": "Are you okay?", 
+    "end": 667.58, 
+    "start": 666.49
+  }, 
+  {
+    "content": "Yes...", 
+    "end": 668.67, 
+    "start": 667.58
+  }, 
+  {
+    "content": "Hey...", 
+    "end": 682.97, 
+    "start": 682.02
+  }, 
+  {
+    "content": "What's that?", 
+    "end": 683.81, 
+    "start": 682.97
+  }, 
+  {
+    "content": "What was that explosion?", 
+    "end": 686.12, 
+    "start": 684.73
+  }, 
+  {
+    "content": "Why now?!", 
+    "end": 699.49, 
+    "start": 697.96
+  }, 
+  {
+    "content": "Calm down.", 
+    "end": 700.38, 
+    "start": 699.49
+  }, 
+  {
+    "content": "Captain Levi!", 
+    "end": 702.18, 
+    "start": 700.82
+  }, 
+  {
+    "content": "This is...", 
+    "end": 703.81, 
+    "start": 702.77
+  }, 
+  {
+    "content": "I said to calm down.", 
+    "end": 707.43, 
+    "start": 705.52
+  }, 
+  {
+    "content": "All of you.", 
+    "end": 708.95, 
+    "start": 707.88
+  }, 
+  {
+    "content": "Information We Can Share So Far:", 
+    "end": 728.95, 
+    "start": 723.95
+  }, 
+  {
+    "content": "Smoke Rounds (1) \r\nSignal rounds fired by small handguns using gunpowder. \r\nA small tube, with the round, is swapped out each time.", 
+    "end": 728.95, 
+    "start": 723.95
+  }, 
+  {
+    "content": "Information We Can Share So Far:", 
+    "end": 733.96, 
+    "start": 728.95
+  }, 
+  {
+    "content": "Smoke Rounds (2) \r\nThe signal color changes per message: \r\nRed \u2014 Titan sighted. \r\nGreen \u2014 Change course. \r\n Black \u2014 Aberrant sighted.", 
+    "end": 733.96, 
+    "start": 728.95
+  }, 
+  {
+    "content": "What? What was that sound?", 
+    "end": 738.34, 
+    "start": 736.46
+  }, 
+  {
+    "content": "Eren...", 
+    "end": 753.69, 
+    "start": 752.69
+  }, 
+  {
+    "content": "What's the meaning of this?!", 
+    "end": 755.48, 
+    "start": 754.19
+  }, 
+  {
+    "content": "Sir?", 
+    "end": 756.98, 
+    "start": 756.32
+  }, 
+  {
+    "content": "Why now? Without permission?", 
+    "end": 759.31, 
+    "start": 757.44
+  }, 
+  {
+    "content": "Answer me!", 
+    "end": 760.03, 
+    "start": 759.31
+  }, 
+  {
+    "content": "Eldo, wait.", 
+    "end": 761.03, 
+    "start": 760.16
+  }, 
+  {
+    "content": "Answer him, Eren!", 
+    "end": 762.27, 
+    "start": 761.03
+  }, 
+  {
+    "content": "What are you thinking?", 
+    "end": 763.24, 
+    "start": 762.27
+  }, 
+  {
+    "content": "No, that can wait...", 
+    "end": 766.78, 
+    "start": 764.35
+  }, 
+  {
+    "content": "Prove you're not our enemy, humanity's enemy!", 
+    "end": 771.79, 
+    "start": 767.18
+  }, 
+  {
+    "content": "Prove it! Now!", 
+    "end": 774.6, 
+    "start": 772.83
+  }, 
+  {
+    "content": "That is your responsibility!", 
+    "end": 776.33, 
+    "start": 774.6
+  }, 
+  {
+    "content": "I dare you to make a single move with that arm!", 
+    "end": 778.86, 
+    "start": 776.33
+  }, 
+  {
+    "content": "I'll cut off your head!", 
+    "end": 780.63, 
+    "start": 778.86
+  }, 
+  {
+    "content": "I can do it... I'm serious!", 
+    "end": 783.1, 
+    "start": 781.17
+  }, 
+  {
+    "content": "Want to try me?", 
+    "end": 784.13, 
+    "start": 783.1
+  }, 
+  {
+    "content": "Oluo,", 
+    "end": 785.07, 
+    "start": 784.13
+  }, 
+  {
+    "content": "I said to calm down.", 
+    "end": 786.26, 
+    "start": 785.07
+  }, 
+  {
+    "content": "Captain, get away from Eren!", 
+    "end": 788.75, 
+    "start": 786.26
+  }, 
+  {
+    "content": "You're too close!", 
+    "end": 789.35, 
+    "start": 788.75
+  }, 
+  {
+    "content": "No, you're the ones who should get back.", 
+    "end": 792.28, 
+    "start": 789.35
+  }, 
+  {
+    "content": "Get back.", 
+    "end": 792.81, 
+    "start": 792.28
+  }, 
+  {
+    "content": "Why?!", 
+    "end": 793.6, 
+    "start": 792.81
+  }, 
+  {
+    "content": "My intuition.", 
+    "end": 794.64, 
+    "start": 793.6
+  }, 
+  {
+    "content": "What's wrong, Eren?", 
+    "end": 795.69, 
+    "start": 794.64
+  }, 
+  {
+    "content": "Say something!", 
+    "end": 796.92, 
+    "start": 795.69
+  }, 
+  {
+    "content": "Like I said...", 
+    "end": 797.39, 
+    "start": 796.92
+  }, 
+  {
+    "content": "No sudden movements!", 
+    "end": 798.52, 
+    "start": 797.39
+  }, 
+  {
+    "content": "Prove it to me, Eren!", 
+    "end": 800.19, 
+    "start": 798.52
+  }, 
+  {
+    "content": "I said I don't understand.", 
+    "end": 801.12, 
+    "start": 800.19
+  }, 
+  {
+    "content": "Answer us! You think we can't kill you?", 
+    "end": 803.83, 
+    "start": 801.12
+  }, 
+  {
+    "content": "I'm serious!", 
+    "end": 805.0, 
+    "start": 803.83
+  }, 
+  {
+    "content": "Do it now!", 
+    "end": 805.83, 
+    "start": 805.0
+  }, 
+  {
+    "content": "Are you even listening?", 
+    "end": 806.9, 
+    "start": 805.83
+  }, 
+  {
+    "content": "Okay, let's do this!", 
+    "end": 807.87, 
+    "start": 806.9
+  }, 
+  {
+    "content": "Are you humanity's\u2014", 
+    "end": 808.8, 
+    "start": 807.87
+  }, 
+  {
+    "content": "Please shut up for a second!", 
+    "end": 811.24, 
+    "start": 808.4
+  }, 
+  {
+    "content": "Eren!", 
+    "end": 819.71, 
+    "start": 817.29
+  }, 
+  {
+    "content": "Can I touch that arm?!", 
+    "end": 823.09, 
+    "start": 820.12
+  }, 
+  {
+    "content": "It's okay, right? Right?", 
+    "end": 826.18, 
+    "start": 823.59
+  }, 
+  {
+    "content": "Just let me touch it!", 
+    "end": 827.64, 
+    "start": 826.18
+  }, 
+  {
+    "content": "Hanji...", 
+    "end": 828.89, 
+    "start": 827.64
+  }, 
+  {
+    "content": "Wait a second!", 
+    "end": 830.13, 
+    "start": 828.89
+  }, 
+  {
+    "content": "It's... hot!", 
+    "end": 834.77, 
+    "start": 832.14
+  }, 
+  {
+    "content": "Without the skin, it's really damned hot!", 
+    "end": 837.66, 
+    "start": 834.77
+  }, 
+  {
+    "content": "Unbelievably hot!", 
+    "end": 839.57, 
+    "start": 837.66
+  }, 
+  {
+    "content": "Squad Leader,", 
+    "end": 840.4, 
+    "start": 839.57
+  }, 
+  {
+    "content": "you're too reckless!", 
+    "end": 842.69, 
+    "start": 840.86
+  }, 
+  {
+    "content": "Hey, don't you feel it's hot, Eren?", 
+    "end": 845.4, 
+    "start": 842.69
+  }, 
+  {
+    "content": "How does it feel where the right hand connects?", 
+    "end": 848.48, 
+    "start": 845.4
+  }, 
+  {
+    "content": "I really want to see!", 
+    "end": 850.35, 
+    "start": 848.48
+  }, 
+  {
+    "content": "That's right...", 
+    "end": 851.41, 
+    "start": 850.35
+  }, 
+  {
+    "content": "If I just pull out this hand...", 
+    "end": 854.22, 
+    "start": 851.41
+  }, 
+  {
+    "content": "Stupid thing!", 
+    "end": 856.21, 
+    "start": 855.16
+  }, 
+  {
+    "content": "Hey, Eren...", 
+    "end": 860.74, 
+    "start": 859.52
+  }, 
+  {
+    "content": "Don't do anything rash!", 
+    "end": 861.92, 
+    "start": 860.74
+  }, 
+  {
+    "content": "What?!", 
+    "end": 868.0, 
+    "start": 866.8
+  }, 
+  {
+    "content": "Wait, Eren... That was too fast!", 
+    "end": 870.18, 
+    "start": 868.0
+  }, 
+  {
+    "content": "I still wanted to investigate some things...", 
+    "end": 872.64, 
+    "start": 870.53
+  }, 
+  {
+    "content": "Captain...", 
+    "end": 885.9, 
+    "start": 884.79
+  }, 
+  {
+    "content": "How do you feel?", 
+    "end": 889.15, 
+    "start": 887.32
+  }, 
+  {
+    "content": "{\\fad(1,324)}Not... Not so good...", 
+    "end": 899.62, 
+    "start": 895.03
+  }, 
+  {
+    "content": "Until I saw that they were actually ready \r\nto kill me, I didn't understand...", 
+    "end": 910.56, 
+    "start": 906.21
+  }, 
+  {
+    "content": "That they doubted me so much.", 
+    "end": 914.49, 
+    "start": 911.68
+  }, 
+  {
+    "content": "Of course they do.", 
+    "end": 916.44, 
+    "start": 915.15
+  }, 
+  {
+    "content": "That's why I chose them.", 
+    "end": 919.1, 
+    "start": 916.84
+  }, 
+  {
+    "content": "People say you only truly become a \r\nfull member of the Survey Corps", 
+    "end": 923.85, 
+    "start": 920.85
+  }, 
+  {
+    "content": "after making it back alive from a mission.", 
+    "end": 926.11, 
+    "start": 923.85
+  }, 
+  {
+    "content": "But whenever you fight the Titans, \r\nyou never have enough information.", 
+    "end": 929.92, 
+    "start": 926.86
+  }, 
+  {
+    "content": "There are too many situations you just \r\ncan't anticipate, no matter what.", 
+    "end": 934.55, 
+    "start": 930.74
+  }, 
+  {
+    "content": "They've had to cultivate the \r\nability to take quick action", 
+    "end": 939.0, 
+    "start": 936.06
+  }, 
+  {
+    "content": "and to make ruthless decisions by assuming \r\nthe worse case scenario.", 
+    "end": 941.82, 
+    "start": 939.0
+  }, 
+  {
+    "content": "But that doesn't mean they've become heartless.", 
+    "end": 946.25, 
+    "start": 942.83
+  }, 
+  {
+    "content": "It's not like they felt nothing when \r\nthey turned their swords on you.", 
+    "end": 951.38, 
+    "start": 947.08
+  }, 
+  {
+    "content": "Captain Levi...", 
+    "end": 953.82, 
+    "start": 952.65
+  }, 
+  {
+    "content": "Squad Leader Hanji wants to see you.", 
+    "end": 956.8, 
+    "start": 955.03
+  }, 
+  {
+    "content": "Take a long crap?", 
+    "end": 962.21, 
+    "start": 960.2
+  }, 
+  {
+    "content": "Actually, it was pleasantly quick.", 
+    "end": 965.27, 
+    "start": 962.21
+  }, 
+  {
+    "content": "I wasn't sure what to tell the brass.", 
+    "end": 968.33, 
+    "start": 965.7
+  }, 
+  {
+    "content": "Well, for now...", 
+    "end": 970.55, 
+    "start": 969.06
+  }, 
+  {
+    "content": "Look at this.", 
+    "end": 972.6, 
+    "start": 971.21
+  }, 
+  {
+    "content": "A teaspoon?", 
+    "end": 976.28, 
+    "start": 973.93
+  }, 
+  {
+    "content": "Yes.", 
+    "end": 977.24, 
+    "start": 976.28
+  }, 
+  {
+    "content": "The right Titan hand Eren \r\ncreated was holding this.", 
+    "end": 981.52, 
+    "start": 978.08
+  }, 
+  {
+    "content": "Like this, between its index finger and thumb.", 
+    "end": 985.5, 
+    "start": 981.52
+  }, 
+  {
+    "content": "It's hard to imagine that was an accident...", 
+    "end": 990.21, 
+    "start": 986.81
+  }, 
+  {
+    "content": "And for some reason,", 
+    "end": 992.07, 
+    "start": 990.62
+  }, 
+  {
+    "content": "the heat and pressure didn't \r\nwarp the spoon at all.", 
+    "end": 995.14, 
+    "start": 992.07
+  }, 
+  {
+    "content": "Anything come to mind?", 
+    "end": 997.01, 
+    "start": 995.31
+  }, 
+  {
+    "content": "I was trying to pick it up...", 
+    "end": 1000.56, 
+    "start": 998.53
+  }, 
+  {
+    "content": "I transformed right after.", 
+    "end": 1003.27, 
+    "start": 1001.23
+  }, 
+  {
+    "content": "I see...", 
+    "end": 1005.85, 
+    "start": 1004.46
+  }, 
+  {
+    "content": "That may explain why you couldn't transform earlier.", 
+    "end": 1010.61, 
+    "start": 1006.66
+  }, 
+  {
+    "content": "\"Kill the Titans.\"", 
+    "end": 1013.87, 
+    "start": 1012.43
+  }, 
+  {
+    "content": "\"Block the cannon shell.\"", 
+    "end": 1015.41, 
+    "start": 1014.17
+  }, 
+  {
+    "content": "\"Lift the boulder.\"", 
+    "end": 1017.49, 
+    "start": 1015.78
+  }, 
+  {
+    "content": "In each case, you had a clear \r\ngoal before you transformed.", 
+    "end": 1022.73, 
+    "start": 1018.02
+  }, 
+  {
+    "content": "My theory is", 
+    "end": 1025.07, 
+    "start": 1023.87
+  }, 
+  {
+    "content": "that your self-inflicted injury \r\nprobably isn't the sole trigger.", 
+    "end": 1028.22, 
+    "start": 1025.07
+  }, 
+  {
+    "content": "You may need some goal, as well.", 
+    "end": 1031.8, 
+    "start": 1028.62
+  }, 
+  {
+    "content": "It's true that when I turned into a Titan this time,", 
+    "end": 1035.1, 
+    "start": 1032.87
+  }, 
+  {
+    "content": "it was like when I blocked that cannon shell.", 
+    "end": 1037.89, 
+    "start": 1035.1
+  }, 
+  {
+    "content": "But...", 
+    "end": 1039.35, 
+    "start": 1038.23
+  }, 
+  {
+    "content": "I turned into a Titan to pick up a spoon?", 
+    "end": 1042.94, 
+    "start": 1039.9
+  }, 
+  {
+    "content": "What the hell is this?", 
+    "end": 1046.24, 
+    "start": 1044.3
+  }, 
+  {
+    "content": "In other words, you didn't deliberately \r\nchange without permission?", 
+    "end": 1052.74, 
+    "start": 1048.16
+  }, 
+  {
+    "content": "No, sir.", 
+    "end": 1054.26, 
+    "start": 1053.41
+  }, 
+  {
+    "content": "Huh? Eh?", 
+    "end": 1071.25, 
+    "start": 1069.24
+  }, 
+  {
+    "content": "Wait, what are you doing?", 
+    "end": 1073.71, 
+    "start": 1071.57
+  }, 
+  {
+    "content": "That hurt...", 
+    "end": 1075.79, 
+    "start": 1074.36
+  }, 
+  {
+    "content": "This isn't easy.", 
+    "end": 1078.44, 
+    "start": 1076.67
+  }, 
+  {
+    "content": "I'm amazed you can bite through, Eren.", 
+    "end": 1082.29, 
+    "start": 1078.81
+  }, 
+  {
+    "content": "We made the wrong decision.", 
+    "end": 1084.98, 
+    "start": 1082.77
+  }, 
+  {
+    "content": "This is a small price to pay.", 
+    "end": 1087.51, 
+    "start": 1085.68
+  }, 
+  {
+    "content": "Not that it makes a difference.", 
+    "end": 1090.23, 
+    "start": 1087.86
+  }, 
+  {
+    "content": "Keeping you under control is our job.", 
+    "end": 1094.14, 
+    "start": 1091.57
+  }, 
+  {
+    "content": "And there's nothing wrong with that.", 
+    "end": 1096.8, 
+    "start": 1094.64
+  }, 
+  {
+    "content": "So don't get cocky!", 
+    "end": 1099.03, 
+    "start": 1097.23
+  }, 
+  {
+    "content": "I'm sorry, Eren...", 
+    "end": 1100.99, 
+    "start": 1099.43
+  }, 
+  {
+    "content": "We've been so jumpy.", 
+    "end": 1103.54, 
+    "start": 1101.68
+  }, 
+  {
+    "content": "You must be disappointed in our stupidity.", 
+    "end": 1105.92, 
+    "start": 1104.35
+  }, 
+  {
+    "content": "However, even so...", 
+    "end": 1109.31, 
+    "start": 1106.98
+  }, 
+  {
+    "content": "We're going to rely on you. \r\nAnd we want you to rely on us.", 
+    "end": 1113.86, 
+    "start": 1109.82
+  }, 
+  {
+    "content": "So...", 
+    "end": 1120.24, 
+    "start": 1119.23
+  }, 
+  {
+    "content": "Have faith in us...", 
+    "end": 1124.22, 
+    "start": 1121.37
+  }, 
+  {
+    "content": "Eren!", 
+    "end": 1135.07, 
+    "start": 1134.17
+  }, 
+  {
+    "content": "You're taking too long! Decide!", 
+    "end": 1137.74, 
+    "start": 1135.58
+  }, 
+  {
+    "content": "I'll go forward!", 
+    "end": 1142.03, 
+    "start": 1140.57
+  }, 
+  {
+    "content": "Let me go!", 
+    "end": 1150.42, 
+    "start": 1148.93
+  }, 
+  {
+    "content": "I'm sorry!", 
+    "end": 1157.84, 
+    "start": 1156.44
+  }, 
+  {
+    "content": "Target is accelerating!", 
+    "end": 1166.97, 
+    "start": 1165.45
+  }, 
+  {
+    "content": "Go!", 
+    "end": 1168.75, 
+    "start": 1167.71
+  }, 
+  {
+    "content": "We will outrun it.", 
+    "end": 1170.11, 
+    "start": 1168.75
+  }, 
+  {
+    "content": "It's impossible to outrun it...", 
+    "end": 1176.21, 
+    "start": 1173.3
+  }, 
+  {
+    "content": "If we keep running away, it'll stomp us all flat!", 
+    "end": 1180.8, 
+    "start": 1176.81
+  }, 
+  {
+    "content": "But...", 
+    "end": 1185.03, 
+    "start": 1184.07
+  }, 
+  {
+    "content": "We might all die,", 
+    "end": 1187.29, 
+    "start": 1185.53
+  }, 
+  {
+    "content": "but everyone chose to go on,", 
+    "end": 1189.54, 
+    "start": 1187.73
+  }, 
+  {
+    "content": "even if it meant abandoning our comrades.", 
+    "end": 1192.04, 
+    "start": 1189.91
+  }, 
+  {
+    "content": "Captain Levi has been looking \r\nforward this whole time.", 
+    "end": 1196.35, 
+    "start": 1193.12
+  }, 
+  {
+    "content": "And the rest of the squad", 
+    "end": 1198.6, 
+    "start": 1197.32
+  }, 
+  {
+    "content": "believe in him, and put all their trust in him.", 
+    "end": 1201.55, 
+    "start": 1199.1
+  }, 
+  {
+    "content": "I'll believe in them, too...", 
+    "end": 1207.06, 
+    "start": 1203.55
+  }, 
+  {
+    "content": "Like they", 
+    "end": 1210.06, 
+    "start": 1208.79
+  }, 
+  {
+    "content": "believed in me!", 
+    "end": 1213.28, 
+    "start": 1211.28
+  }, 
+  {
+    "content": "Fire!", 
+    "end": 1231.14, 
+    "start": 1229.08
+  }, 
+  {
+    "content": "Advance a bit farther, tether the horses,", 
+    "end": 1254.07, 
+    "start": 1251.53
+  }, 
+  {
+    "content": "and switch to Maneuver Gear.", 
+    "end": 1255.48, 
+    "start": 1254.07
+  }, 
+  {
+    "content": "You guys will be off on your own for a while.", 
+    "end": 1258.02, 
+    "start": 1255.99
+  }, 
+  {
+    "content": "Eldo, lead the squad.", 
+    "end": 1260.13, 
+    "start": 1258.41
+  }, 
+  {
+    "content": "Once you're a good distance away \r\nfrom the Titan, hide Eren.", 
+    "end": 1264.88, 
+    "start": 1261.64
+  }, 
+  {
+    "content": "Take my horse.", 
+    "end": 1266.2, 
+    "start": 1264.88
+  }, 
+  {
+    "content": "He can't intend", 
+    "end": 1272.37, 
+    "start": 1271.3
+  }, 
+  {
+    "content": "to take that Titan alive?", 
+    "end": 1276.65, 
+    "start": 1273.54
+  }, 
+  {
+    "content": "Well, Eren? See that?", 
+    "end": 1283.54, 
+    "start": 1281.46
+  }, 
+  {
+    "content": "We caught that Titan!", 
+    "end": 1285.68, 
+    "start": 1283.54
+  }, 
+  {
+    "content": "This is the power of the Survey Corps!", 
+    "end": 1288.14, 
+    "start": 1285.97
+  }, 
+  {
+    "content": "Don't underestimate us, fool.", 
+    "end": 1289.76, 
+    "start": 1288.14
+  }, 
+  {
+    "content": "Well? Do you get it now?", 
+    "end": 1291.78, 
+    "start": 1290.07
+  }, 
+  {
+    "content": "Yes!", 
+    "end": 1294.62, 
+    "start": 1293.65
+  }, 
+  {
+    "content": "Looks like it's stopped moving...", 
+    "end": 1301.07, 
+    "start": 1298.99
+  }, 
+  {
+    "content": "We can't lower our guard.", 
+    "end": 1303.11, 
+    "start": 1301.68
+  }, 
+  {
+    "content": "But you did well, leading it here.", 
+    "end": 1307.34, 
+    "start": 1303.8
+  }, 
+  {
+    "content": "Men in the rearguard squads died \r\nbuying us the time we needed.", 
+    "end": 1313.66, 
+    "start": 1308.62
+  }, 
+  {
+    "content": "We couldn't have done it without them.", 
+    "end": 1316.46, 
+    "start": 1314.46
+  }, 
+  {
+    "content": "Is that so?", 
+    "end": 1318.25, 
+    "start": 1317.23
+  }, 
+  {
+    "content": "It is.", 
+    "end": 1319.76, 
+    "start": 1318.75
+  }, 
+  {
+    "content": "Thanks to them, we'll be able \r\nto see who's inside this thing.", 
+    "end": 1326.43, 
+    "start": 1321.66
+  }, 
+  {
+    "content": "I hope they haven't pissed themselves...", 
+    "end": 1331.99, 
+    "start": 1328.91
+  }, 
+  {
+    "content": "Erwin Smith's secret plan was \r\nto capture the Female Titan.", 
+    "end": 1439.96, 
+    "start": 1433.77
+  }, 
+  {
+    "content": "The aces of the Survey Corps try \r\nto reveal its true identity, but...", 
+    "end": 1445.38, 
+    "start": 1440.82
+  }, 
+  {
+    "content": "Erwin Smith \r\n57th Expedition Beyond the Walls (4)\r\n\r\n", 
+    "end": 1447.83, 
+    "start": 1445.38
+  }
+]

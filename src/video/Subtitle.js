@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Subtitle = ({played}) => (
+const Subtitle = ({engSub}) => (
   <div className="subtitle">
-    Video has played {played} seconds!
+    {engSub}
   </div>
 )
 
