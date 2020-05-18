@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Subtitle = ({engSub}) => (
+const Subtitle = ({engSub, jpSub}) => (
   <div className="subtitle">
-    {engSub}
+    {jpSub}<br/>{engSub}
   </div>
 )
 
