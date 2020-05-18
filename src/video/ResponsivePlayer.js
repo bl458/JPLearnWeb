@@ -6,7 +6,7 @@ const ResponsivePlayer = ({url,handleProgress}) => (
     <ReactPlayer
       className='react-player'
       url={url}
-      controls='true'
+      controls={true}
       width='100%'
       height='100%'
       onProgress={handleProgress}
