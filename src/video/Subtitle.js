@@ -2,29 +2,30 @@ import React from 'react';
 import Kuroshiro from 'kuroshiro';
 import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
 
-const helper = () => {
-  console.log("Entered helper")
+const toFuri = async (jp) => {
   var kuroshiro = new Kuroshiro();
-
-  if (window.getSelection().toString() !== '') {
-    kuroshiro.init(new KuromojiAnalyzer({ dictPath: "/dict" }))
-      .then(() => {
-        return kuroshiro.convert(
-          window.getSelection().toString(),
-           { to: "hiragana" });
-      })
-      .then((result) => {
-        console.log(result);
-      })
-  }
-
-
-
+  await kuroshiro.init(new KuromojiAnalyzer({ dictPath: "/dict" }));
+  return await kuroshiro.convert(jp, { to: "hiragana" });
 }
 
+const onHighlight = () => {
+  console.log("Entered onHighlight");
+
+  if (window.getSelection().toString() !== '') {
+    toFuri(window.getSelection().toString()).then(
+      (result) => console.log(result)
+    )
+  }
+}
+
+
 const Subtitle = ({engSub, jpSub}) => (
-  <div className="subtitle" onClick={helper}>
-    {jpSub}<br/>{engSub}
+  <div className="subtitle" onClick={onHighlight}>
+    {jpSub}
+
+    <br/>
+
+    {engSub}
   </div>
 )
 
