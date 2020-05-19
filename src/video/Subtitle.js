@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Kuroshiro from 'kuroshiro';
 import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
+import { Tooltip } from 'reactstrap';
+
 
 const toFuri = async (jp) => {
   var kuroshiro = new Kuroshiro();
@@ -19,14 +21,26 @@ const onHighlight = () => {
 }
 
 
-const Subtitle = ({engSub, jpSub}) => (
-  <div className="subtitle" onClick={onHighlight}>
-    {jpSub}
 
-    <br/>
+const Subtitle = ({engSub, jpSub}) => {
+  const [tooltipOpen, setTooltipOpen] = useState(false);
 
-    {engSub}
-  </div>
-)
+  const toggle = () => setTooltipOpen(window.getSelection().toString() !== ''&&!tooltipOpen);
+
+  return (
+    <div className="subtitle" onClick={onHighlight}>
+      <p>Sometimes you need to allow users to select text within a <span style={{textDecoration: "underline", color:"blue"}} href="#" id="DisabledAutoHideExample">tooltip</span>.</p>
+
+      <Tooltip placement="top" isOpen={tooltipOpen} autohide={false} target="DisabledAutoHideExample" toggle={toggle}>
+        Try to select this text!
+      </Tooltip>
+      {jpSub}
+
+      <br/>
+
+      {engSub}
+    </div>
+  )
+}
 
 export default Subtitle;
