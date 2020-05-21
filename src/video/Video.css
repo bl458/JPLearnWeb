@@ -30,20 +30,25 @@
 
 .subtitle {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: 30%;
   font-size: 1.8em;
   text-align: center;
   display: inline-block;
-  padding-top: 3%
+  padding-top: 3%;
 }
 
 .jp-sub {
   font-size: 110%;
+  font-weight: bold;
+  min-height: 46.5px;
 }
 
 .eng-sub {
-  font-size: 80%;
+  font-size: 70%;
+  min-height: 46.5px;
+  padding-top: 0.01%;
+
 }
 
 .tooltip-div {
