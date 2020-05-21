@@ -39,30 +39,37 @@ class Subtitle extends Component {
           + this.myRef.current.getBoundingClientRect().right)/2
         return a - b
       }
-      return 0;
   }
 
   render() {
     return (
-      <div ref={this.myRef}
-        className="subtitle"
-        onClick={this.onHighlight}>
+      <div ref={this.myRef} className="subtitle" onClick={this.onHighlight}>
 
-        <p><span href="#" id="jpSub">{this.props.jpSub}</span></p>
+        <div className='jp-sub'>
+          <p><span href="#" id="jpSub">{this.props.jpSub}</span></p>
+          <Tooltip
+            className='in'
+            id='tooltip-bottom'
+            placement='auto'
+            offset={this.tooltipOffset()}
+            isOpen={this.state.tooltipOpen}
+            autohide={false}
+            target="jpSub"
+            toggle={this.toggle}>
+            <div className="tooltip-div">
+              {this.state.tooltipText}
+              <button>Add to deck!</button>
+            </div>
+          </Tooltip>
+        </div>
 
-        <Tooltip
-          placement='bottom'
-          offset={this.tooltipOffset()}
-          isOpen={this.state.tooltipOpen}
-          autohide={false}
-          target="jpSub"
-          toggle={this.toggle}>
-          {this.state.tooltipText}
-        </Tooltip>
 
-        <br/>
+        <div className='eng-sub'>
+          {this.props.engSub}
+        </div>
 
-        {this.props.engSub}
+        <br/><br/>
+
       </div>
     );
   }
