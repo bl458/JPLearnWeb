@@ -1,46 +1,71 @@
-import React, { useState } from 'react';
+import React, {Component} from 'react';
 import Kuroshiro from 'kuroshiro';
 import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
 import { Tooltip } from 'reactstrap';
 
 
-const toFuri = async (jp) => {
-  var kuroshiro = new Kuroshiro();
-  await kuroshiro.init(new KuromojiAnalyzer({ dictPath: "/dict" }));
-  return await kuroshiro.convert(jp, { to: "hiragana" });
-}
-
-const onHighlight = () => {
-  console.log("Entered onHighlight");
-
-  if (window.getSelection().toString() !== '') {
-    toFuri(window.getSelection().toString()).then(
-      (result) => console.log(result)
-    )
+class Subtitle extends Component {
+  constructor(props) {
+    super(props)
+    this.myRef = React.createRef()
   }
-}
 
+  state={
+    tooltipOpen: false,
+    tooltipText: ''
+  }
 
+  toggle = () => this.setState({tooltipOpen: window.getSelection().toString() !== ''&&!this.state.tooltipOpen});
 
-const Subtitle = ({engSub, jpSub}) => {
-  const [tooltipOpen, setTooltipOpen] = useState(false);
+  toFuri = async (jp) => {
+    var kuroshiro = new Kuroshiro();
+    await kuroshiro.init(new KuromojiAnalyzer({ dictPath: "/dict" }));
+    return await kuroshiro.convert(jp, { to: "hiragana" });
+  }
 
-  const toggle = () => setTooltipOpen(window.getSelection().toString() !== ''&&!tooltipOpen);
+  onHighlight = () => {
+    if (window.getSelection().toString() !== '') {
+      this.toFuri(window.getSelection().toString()).then(
+        (result) => {this.setState({tooltipText: result})}
+      )
+    }
+  }
 
-  return (
-    <div className="subtitle" onClick={onHighlight}>
-      <p>Sometimes you need to allow users to select text within a <span style={{textDecoration: "underline", color:"blue"}} href="#" id="DisabledAutoHideExample">tooltip</span>.</p>
+  tooltipOffset = () => {
+      if (window.getSelection().toString() !== '') {
+        var a = (window.getSelection().getRangeAt(0).getBoundingClientRect().left
+          + window.getSelection().getRangeAt(0).getBoundingClientRect().right)/2
+        var b = (this.myRef.current.getBoundingClientRect().left
+          + this.myRef.current.getBoundingClientRect().right)/2
+        return a - b
+      }
+      return 0;
+  }
 
-      <Tooltip placement="top" isOpen={tooltipOpen} autohide={false} target="DisabledAutoHideExample" toggle={toggle}>
-        Try to select this text!
-      </Tooltip>
-      {jpSub}
+  render() {
+    return (
+      <div ref={this.myRef}
+        className="subtitle"
+        onClick={this.onHighlight}>
 
-      <br/>
+        <p><span href="#" id="jpSub">{this.props.jpSub}</span></p>
 
-      {engSub}
-    </div>
-  )
+        <Tooltip
+          placement='bottom'
+          offset={this.tooltipOffset()}
+          isOpen={this.state.tooltipOpen}
+          autohide={false}
+          target="jpSub"
+          toggle={this.toggle}>
+          {this.state.tooltipText}
+        </Tooltip>
+
+        <br/>
+
+        {this.props.engSub}
+      </div>
+    );
+  }
 }
 
 export default Subtitle;
