@@ -63,6 +63,7 @@ class Subtitle extends Component {
           </Tooltip>
         </div>
 
+        <br/>
 
         <div className='eng-sub'>
           {this.props.engSub}

@@ -39,7 +39,11 @@
 }
 
 .jp-sub {
-  font-size: 130%;
+  font-size: 110%;
+}
+
+.eng-sub {
+  font-size: 80%;
 }
 
 .tooltip-div {
