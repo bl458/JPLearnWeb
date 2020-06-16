@@ -49,7 +49,6 @@ class Subtitle extends Component {
           <p><span href="#" id="jpSub">{this.props.jpSub}</span></p>
           <Tooltip
             className='in'
-            id='tooltip-bottom'
             placement='auto'
             offset={this.tooltipOffset()}
             isOpen={this.state.tooltipOpen}

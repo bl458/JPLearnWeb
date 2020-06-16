@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Nav,Navbar,NavDropdown,Form,FormControl,Button} from 'react-bootstrap';
-// import './Nav.css'
+import {Nav,Navbar,NavDropdown} from 'react-bootstrap';
+import GoogleBtn from './GoogleBtn'
 
 class ReactiveNav extends Component {
 
@@ -20,10 +20,7 @@ class ReactiveNav extends Component {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <GoogleBtn />
         </Navbar.Collapse>
       </Navbar>
     );
