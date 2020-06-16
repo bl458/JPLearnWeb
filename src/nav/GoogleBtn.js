@@ -9,7 +9,7 @@ class GoogleBtn extends Component {
     isLogined: false,
     id: '',
     email: '',
-    username: ''
+    name: ''
   }
 
   async verify(response) {
@@ -33,13 +33,14 @@ class GoogleBtn extends Component {
     .then(payload => fetch(`http://localhost:4000/register?googleId=${payload['sub']}&name=${payload['name']}&email=${payload['email']}`))
     .then(this.setState({
       isLogined: true,
-      id: response.profileObj.id,
+      id: response.profileObj.googleId,
       email: response.profileObj.email,
-      username: response.profileObj.name
+      name: response.profileObj.name
     }))
+    .then(this.props.onSignIn(this.state.id, this.state.email, this.state.name))
     .catch(err => console.error(err))
 
-    console.log('Email: ', this.state.email, '\nName: ', this.state.username)
+    console.log('In GoogleBtn.js: Id: ', this.state.id, 'Email: ', this.state.email, '\nName: ', this.state.name)
   }
 
   logout = (response) => {
@@ -48,9 +49,9 @@ class GoogleBtn extends Component {
       isLogined: false,
       id: '',
       email: '',
-      username: ''
+      name: ''
     }));
-    console.log('Email: ', this.state.email, '\nName: ', this.state.username)
+    console.log('Email: ', this.state.email, '\nName: ', this.state.name)
   }
 
   handleLoginFailure = (response) => {

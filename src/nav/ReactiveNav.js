@@ -3,6 +3,20 @@ import {Nav,Navbar,NavDropdown} from 'react-bootstrap';
 import GoogleBtn from './GoogleBtn'
 
 class ReactiveNav extends Component {
+  state = {
+    id: '',
+    email: '',
+    name: ''
+  }
+
+  handleSignInNav = (id, email, name) => {
+    this.setState({
+      id: id,
+      email: email,
+      name: name
+    })
+    this.props.onSignInNav(id, email, name)
+  }
 
   render() {
     return (
@@ -20,7 +34,7 @@ class ReactiveNav extends Component {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <GoogleBtn />
+          <GoogleBtn onSignIn={this.handleSignInNav}/>
         </Navbar.Collapse>
       </Navbar>
     );
