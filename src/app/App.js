@@ -30,8 +30,8 @@ class App extends Component {
           <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/home' exact component={Home}/>
-            <Route path='/videos' component={Video}/>
-            <Route path='/quiz/quiz' component={Quiz}/>
+            <Route path='/videos' render={() => <Video id={this.state.id} email={this.state.email} name={this.state.name}/>}/>
+            <Route path='/quiz/quiz' render={() => <Quiz id={this.state.id} email={this.state.email} name={this.state.name}/>}/>
           </Switch>
         </Router>
 

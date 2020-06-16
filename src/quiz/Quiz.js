@@ -47,6 +47,7 @@ class Quiz extends Component {
       questionPage: 0
     });
     console.log("Finished onStart. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
+    // console.log('Quiz id: ', this.props.id)
   };
 
   onAgain = () => {
