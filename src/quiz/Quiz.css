@@ -49,15 +49,16 @@
 
 .answer-page {
   display: inline-block;
-  width: 1024px;
+  width: 100%;
   font-size: 1em;
   top: 250px;
   text-align: center;
 }
 
 .answer-inner {
+
   display: inline-block;
-  width: 1024px;
+  width: 100%;
   font-size: 0.8em;
   top: 250px;
   text-align: center;
@@ -92,7 +93,26 @@
   margin: 20px;
 }
 
+.qresultBtns {
+  display: inline-flex;
+}
+
 .againBtn {
+  font-size: 1.0em;
+  padding: 10px;
+  top: 200px;
+  background-color: rgb(46, 182, 46);
+  color: rgb(255, 255, 255);
+  width: 200px;
+  left: 100px;
+  right: 0px;
+  margin: auto;
+  outline: none;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.reviewBtn {
   font-size: 1.0em;
   padding: 10px;
   top: 200px;

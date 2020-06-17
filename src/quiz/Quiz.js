@@ -13,6 +13,7 @@ class Quiz extends Component {
     numberq: 1, //Total number of questions in the quiz (min 1, max 10)
     score: 0,
     qBank: [{kanji:"",hiragana:"",english:""}],
+    reviewQBank: [{kanji:"",hiragana:"",english:""}],
     answer: '',
     questionPage: 0 //Question Page: 0, Answer page: 1
   };
@@ -68,6 +69,11 @@ class Quiz extends Component {
         this.state.score+1 : this.state.score,
       questionPage: 1
     });
+
+    // Add wrong answer to review deck in db
+    if (this.state.qBank[0].Hiragana!==this.state.answer.trim()) {
+      fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}&furi=${this.state.qBank[0].Hiragana}&meaning=${this.state.qBank[0].English}`)
+    }
 
     console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };

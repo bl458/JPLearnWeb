@@ -62,8 +62,22 @@ app.get('/video_vocab', (req, res) => {
       return res.send('Successfully added video vocab')
     }
   })
-
  })
+
+ app.get('/review', (req, res) => {
+   const {googleId, deck, word, furi, meaning} = req.query
+   const REVIEW_QUERY =
+     `INSERT INTO jquiz_review(google_id, deck, word, furi, meaning) VALUES('${googleId}', '${deck}' , '${word}', '${furi}', '${meaning}')`
+   connection.query(REVIEW_QUERY, (err, results) => {
+     if (err) {
+       return res.send(err)
+     }
+     else {
+       return res.send('Successfully added vocab to review')
+     }
+   })
+  })
+
 
 app.listen(4000, () => {
   console.log('Server on port 4000 working')

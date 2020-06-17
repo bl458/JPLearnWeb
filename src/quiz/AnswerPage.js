@@ -6,10 +6,10 @@ const AnswerPage= ({qBank,onNext}) =>
       {qBank[0].Hiragana}
       <br />
       {qBank[0].English}
-    </div>
-    <br />
+      <br />
 
-    <button className="submitBtn" onClick={onNext}>Next</button>
+      <button className="submitBtn" onClick={onNext}>Next</button>
+    </div>
   </div>
 
 export default AnswerPage;
