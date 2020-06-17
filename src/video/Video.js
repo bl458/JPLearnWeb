@@ -80,6 +80,7 @@ class Video extends Component {
             handleProgress={this.handleProgress}
           />
           <Subtitle
+            id={this.props.id}
             engSub={this.state.engSub}
             jpSub={this.state.jpSub}
           />

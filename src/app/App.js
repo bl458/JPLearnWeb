@@ -34,7 +34,6 @@ class App extends Component {
             <Route path='/quiz/quiz' render={() => <Quiz id={this.state.id} email={this.state.email} name={this.state.name}/>}/>
           </Switch>
         </Router>
-
       </div>
     )
   }

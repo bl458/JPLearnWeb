@@ -3,12 +3,13 @@ const cors = require('cors')
 const mysql = require('mysql')
 
 const app = express()
-const SELECT_ALL_LOGIN = "SELECT * FROM nodejs_google_login"
+const SELECT_ALL_LOGIN = "SELECT * FROM jquiz_google_login"
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'Lbc1skygrin',
-  database: 'nodejs'
+  database: 'nodejs',
+  charset : 'utf8mb4'
 })
 
 connection.connect(err => {
@@ -38,7 +39,7 @@ app.get('/login_data', (req, res) => {
 
 app.get('/register', (req, res) => {
   const {googleId, name, email} = req.query
-  const REGISTER_QUERY = `INSERT INTO nodejs_google_login(google_id, name, email, created) VALUES('${googleId}', '${name}' , '${email}', 1)`
+  const REGISTER_QUERY = `INSERT INTO jquiz_google_login(google_id, name, email, created) VALUES('${googleId}', '${name}' , '${email}', 1)`
   connection.query(REGISTER_QUERY, (err, results) => {
     if (err) {
       return res.send(err)
@@ -48,6 +49,21 @@ app.get('/register', (req, res) => {
     }
   })
 })
+
+app.get('/video_vocab', (req, res) => {
+  const {googleId, vidId, word, furi, meaning} = req.query
+  const VIDEO_VOCAB_QUERY =
+    `INSERT INTO jquiz_video_vocab(google_id, video_id, word, furi, meaning) VALUES('${googleId}', '${vidId}' , '${word}', '${furi}', '${meaning}')`
+  connection.query(VIDEO_VOCAB_QUERY, (err, results) => {
+    if (err) {
+      return res.send(err)
+    }
+    else {
+      return res.send('Successfully added video vocab')
+    }
+  })
+
+ })
 
 app.listen(4000, () => {
   console.log('Server on port 4000 working')

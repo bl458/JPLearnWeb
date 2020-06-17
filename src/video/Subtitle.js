@@ -41,6 +41,18 @@ class Subtitle extends Component {
       }
   }
 
+  addVocab = () => {
+    console.log('Adding vocab for id: ', this.props.id)
+    const googleId = this.props.id
+    const vidId = '' //placeholder
+    const word = window.getSelection().toString()
+    const furi = this.state.tooltipText
+    const meaning = '' //placeholder
+
+    fetch(`http://localhost:4000/video_vocab?googleId=${googleId}&vidId=${vidId}&word=${word}&furi=${furi}&meaning=${meaning}`)
+    console.log('GoogleId: ', googleId, 'VidId: ', vidId, 'Word: ', word, 'Furi:', furi, 'Meaning: ', meaning)
+  }
+
   render() {
     return (
       <div ref={this.myRef} className="subtitle" onClick={this.onHighlight}>
@@ -54,10 +66,11 @@ class Subtitle extends Component {
             isOpen={this.state.tooltipOpen}
             autohide={false}
             target="jpSub"
-            toggle={this.toggle}>
+            toggle={this.toggle}
+            delay={{ "show": '0', "hide": '400' }}>
             <div className="tooltip-div">
               {this.state.tooltipText}
-              <button>Add to deck!</button>
+              <button onClick={this.addVocab}>Add to video deck!</button>
             </div>
           </Tooltip>
         </div>
