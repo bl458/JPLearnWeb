@@ -1,6 +1,6 @@
 import React from 'react';
 
-const QuizResult=({score, numberq, playAgain}) => (
+const QuizResult=({score, numberq, playAgain, review, firstReview}) => (
   <div className="quiz-board">
     <div className="quiz-inner">
       <br /><br />
@@ -9,7 +9,10 @@ const QuizResult=({score, numberq, playAgain}) => (
 
       <div className="qresultBtns">
         <button className="againBtn" onClick={playAgain}>Play Again!</button>
-        <button className="reviewBtn" onClick={playAgain}>Review!</button>
+        {firstReview===1 ?
+          <button className="reviewBtn" onClick={review}>Review!</button> :
+          <button className="reviewBtn" onClick={review}>Review Again!</button>
+        }
       </div>
     </div>
   </div>

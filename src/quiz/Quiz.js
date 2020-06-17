@@ -12,10 +12,12 @@ class Quiz extends Component {
     deck: 'N1',
     numberq: 1, //Total number of questions in the quiz (min 1, max 10)
     score: 0,
-    qBank: [{kanji:"",hiragana:"",english:""}],
-    reviewQBank: [{kanji:"",hiragana:"",english:""}],
+    qBank: [{kanji:"",hiragana:"",english:""}], // question bank for each game
+    rQBank: [{kanji:"",hiragana:"",english:""}], // review question bank
+    cRQBank: [{kanji:"",hiragana:"",english:""}],
     answer: '',
-    questionPage: 0 //Question Page: 0, Answer page: 1
+    questionPage: 0, //Question Page: 0, Answer page: 1
+    firstReview: 1
   };
 
   /*Functions*/
@@ -54,36 +56,57 @@ class Quiz extends Component {
   onAgain = () => {
     this.setState({
       qBank: [{kanji:"",hiragana:"",english:""}],
+      rQBank: [{kanji:"",hiragana:"",english:""}],
+      cRQBank: [{kanji:"",hiragana:"",english:""}],
       score: 0,
-      playing: this.state.playing===0 ? 1 : 0
+      playing: this.state.playing===0 ? 1 : 0,
+      firstReview: 1,
     });
     console.log("Finished onAgain. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
   };
 
+  onReview = () => {
+    this.state.rQBank.splice(0,1)
+    this.setState({
+      numberq: this.state.firstReview===1 ? this.state.rQBank.length : this.state.cRQBank.length,
+      cRQBank: this.state.firstReview===1 ? JSON.parse(JSON.stringify(this.state.rQBank)) : JSON.parse(JSON.stringify(this.state.cRQBank)),
+      qBank: this.state.firstReview===1 ? JSON.parse(JSON.stringify(this.state.rQBank)) : JSON.parse(JSON.stringify(this.state.cRQBank)),
+      score: 0,
+      playing: 1,
+      firstReview: 0,
+      rQBank: [{kanji:"",hiragana:"",english:""}]
+    })
+    console.log(this.state.cRQBank)
+  }
+
   onSubmit = () => {
-    console.log("Started onSubmit. qBank: " +this.state.qBank.length);
+    console.log("Started onSubmit. qBank: " +this.state.qBank.length)
+    console.log(this.state.qBank[0].Hiragana===this.state.answer.trim())
     // Updates score, shows answer
     this.setState({
-      score:
-        this.state.qBank[0].Hiragana===this.state.answer.trim() ?
+      score: this.state.qBank[0].Hiragana===this.state.answer.trim() ?
         this.state.score+1 : this.state.score,
-      questionPage: 1
-    });
+      questionPage: 1,
+      rQBank: this.state.qBank[0].Hiragana===this.state.answer.trim() ?
+        this.state.rQBank : [...this.state.rQBank, this.state.qBank[0]]
+    })
 
     // Add wrong answer to review deck in db
     if (this.state.qBank[0].Hiragana!==this.state.answer.trim()) {
       fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}&furi=${this.state.qBank[0].Hiragana}&meaning=${this.state.qBank[0].English}`)
     }
 
-    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
-  };
+    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length +" rQBank: " +this.state.rQBank.length);
+    console.log(this.state.rQBank)
+    console.log(this.state.cRQBank)
+  }
 
   onSkip = () => {
     // Shows answer
     this.setState({
       questionPage: 1
-    });
-  };
+    })
+  }
 
   onEnterPress = (func,e) => {
     var code=e.keyCode || e.which;
@@ -145,6 +168,8 @@ class Quiz extends Component {
             score={this.state.score}
             numberq={this.state.numberq}
             playAgain={this.onAgain}
+            review={this.onReview}
+            firstReview={this.state.firstReview}
           />
         }
       </div>
