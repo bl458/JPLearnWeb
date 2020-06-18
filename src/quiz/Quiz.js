@@ -17,7 +17,7 @@ class Quiz extends Component {
     cRQBank: [{kanji:"",hiragana:"",english:""}],
     answer: '',
     questionPage: 0, //Question Page: 0, Answer page: 1
-    firstReview: 1
+    firstReview: 1 //Review mode for the first time or naw
   };
 
   changePlaying = (quizPlaying) => {
@@ -27,7 +27,6 @@ class Quiz extends Component {
     })
   }
 
-  /*Functions*/
   getQuestions = () => {
     if (this.state.deck==='N1') {
       N1().then(
@@ -103,6 +102,7 @@ class Quiz extends Component {
       fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}&furi=${this.state.qBank[0].Hiragana}&meaning=${this.state.qBank[0].English}`)
     }
 
+    // Add to deck progress in db
     fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}`)
 
     console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length +" rQBank: " +this.state.rQBank.length);
@@ -113,8 +113,11 @@ class Quiz extends Component {
   onSkip = () => {
     // Shows answer
     this.setState({
-      questionPage: 1
+      questionPage: 1,
+      rQBank: [...this.state.rQBank, this.state.qBank[0]]
     })
+    fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}&furi=${this.state.qBank[0].Hiragana}&meaning=${this.state.qBank[0].English}`)
+    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}`)
   }
 
   onEnterPress = (func,e) => {
