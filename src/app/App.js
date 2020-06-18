@@ -5,6 +5,7 @@ import './App.css';
 import ReactiveNav from '../nav/ReactiveNav';
 import Quiz from '../quiz/Quiz';
 import Video from '../video/Video';
+import Progress from '../progress/Progress'
 
 class App extends Component {
   state = {
@@ -35,15 +36,24 @@ class App extends Component {
               <Video
                 id={this.state.id}
                 email={this.state.email}
-                name={this.state.name}/>}
-              />
+                name={this.state.name}
+              />}
+            />
             <Route path='/quiz/quiz' render={() =>
               <Quiz
                 ref={(qz) => this.quiz = qz}
                 id={this.state.id}
                 email={this.state.email}
-                name={this.state.name}/>}
-              />
+                name={this.state.name}
+              />}
+            />
+            <Route path='/quiz/deck_progress' render={() =>
+              <Progress
+                id={this.state.id}
+                email={this.state.email}
+                name={this.state.name}
+              />}
+            />
           </Switch>
         </Router>
       </div>
