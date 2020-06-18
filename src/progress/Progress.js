@@ -1,8 +1,12 @@
 import React, {Component} from 'react'
+import DeckSelection from './DeckSelection'
+import DeckProgress from './DeckProgress'
 
 class Progress extends Component {
   state = {
-    pDeck: 'N1' // deck that user chose to view progress
+    pDeck: 'N1', // Deck that user chose to view progress
+    pBank: [], // Deck progress array. List of words that have already been seen in quiz. [{google_id: _, deck: _, word: _}, ...]
+    showP: 0 // Show deck progress if 1. Show deck selection page if 0
   }
 
   onPDeckChange = (e) => {
@@ -13,20 +17,30 @@ class Progress extends Component {
   }
 
   onCheck = () => {
-    console.log(this.state.pDeck)
+    fetch(`http://localhost:4000/view_progress?googleId='${this.props.id}'&deck='${this.state.pDeck}'`)
+    .then((response) => response.json())
+    .then((json) => this.setState({
+      pBank: json.data,
+      showP: 1
+    }))
   }
 
   render() {
     return (
       <div className="quiz-board">
         <div className="quiz-inner">
-          <h1>This is the Progress page! ID is {this.props.id}</h1>
-          <label>Deck:     </label>
-          <select className="deck-select" onChange={this.onPDeckChange}>
-            <option value="N1">N1</option>
-            <option value="N2">N2</option>
-          </select>
-          <button className="playBtn" onClick={this.onCheck}>Check!</button>
+          {this.state.showP===0 &&
+            <DeckSelection
+              onPDeckChange={this.onPDeckChange}
+              onCheck={this.onCheck}
+            />
+          }
+          {this.state.showP===1 &&
+            <DeckProgress
+              pDeck={this.state.pDeck}
+              pBank={this.state.pBank}
+            />
+          }
         </div>
       </div>
     )

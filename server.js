@@ -92,6 +92,22 @@ app.get('/video_vocab', (req, res) => {
     })
    })
 
+   app.get('/view_progress', (req, res) => {
+     const {googleId, deck} = req.query
+     const VIEW_PROGRESS_QUERY =
+       `SELECT * FROM jquiz_progress WHERE google_id=${googleId} and deck=${deck}`
+     connection.query(VIEW_PROGRESS_QUERY, (err, results) => {
+       if (err) {
+         return res.send(err)
+       }
+       else {
+         return res.json({
+           data: results
+         })
+       }
+     })
+    })
+
 
 app.listen(4000, () => {
   console.log('Server on port 4000 working')
