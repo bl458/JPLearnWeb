@@ -3,20 +3,8 @@ import {Nav,Navbar,NavDropdown} from 'react-bootstrap';
 import GoogleBtn from './GoogleBtn'
 
 class ReactiveNav extends Component {
-  state = {
-    id: '',
-    email: '',
-    name: '',
-    quizPlaying: 0
-  }
 
   handleLogInOutNav = (id, email, name, quizPlaying) => {
-    this.setState({
-      id: id,
-      email: email,
-      name: name,
-      quizPlaying: quizPlaying
-    })
     this.props.onLogInOutNav(id, email, name, quizPlaying)
   }
 
