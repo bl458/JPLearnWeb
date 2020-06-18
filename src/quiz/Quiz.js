@@ -21,7 +21,6 @@ class Quiz extends Component {
   };
 
   changePlaying = (quizPlaying) => {
-    console.log('Entered changePlaying in Quiz.js')
     this.setState({
       playing: quizPlaying
     })

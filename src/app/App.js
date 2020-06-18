@@ -20,7 +20,9 @@ class App extends Component {
       email: email,
       name: name,
     })
-    this.quiz.changePlaying(quizPlaying)
+    if (window.location.pathname==='/quiz/quiz') {
+      this.quiz.changePlaying(quizPlaying)
+    }
     console.log('In App.js: Id: ', this.state.id, 'Email: ', this.state.email, '\nName: ', this.state.name)
   }
 
