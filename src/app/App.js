@@ -10,15 +10,16 @@ class App extends Component {
   state = {
     id: '',
     email: '',
-    name: ''
+    name: '',
   }
 
-  handleSignInApp = (id, email, name) => {
+  handleLogInOutApp = (id, email, name, quizPlaying) => {
     this.setState({
       id: id,
       email: email,
-      name: name
+      name: name,
     })
+    this.quiz.changePlaying(quizPlaying)
     console.log('In App.js: Id: ', this.state.id, 'Email: ', this.state.email, '\nName: ', this.state.name)
   }
 
@@ -26,12 +27,23 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <ReactiveNav onSignInNav={this.handleSignInApp}/>
+          <ReactiveNav onLogInOutNav={this.handleLogInOutApp}/>
           <Switch>
             <Route path='/' exact component={Home}/>
             <Route path='/home' exact component={Home}/>
-            <Route path='/videos' render={() => <Video id={this.state.id} email={this.state.email} name={this.state.name}/>}/>
-            <Route path='/quiz/quiz' render={() => <Quiz id={this.state.id} email={this.state.email} name={this.state.name}/>}/>
+            <Route path='/videos' render={() =>
+              <Video
+                id={this.state.id}
+                email={this.state.email}
+                name={this.state.name}/>}
+              />
+            <Route path='/quiz/quiz' render={() =>
+              <Quiz
+                ref={(qz) => this.quiz = qz}
+                id={this.state.id}
+                email={this.state.email}
+                name={this.state.name}/>}
+              />
           </Switch>
         </Router>
       </div>

@@ -20,6 +20,13 @@ class Quiz extends Component {
     firstReview: 1
   };
 
+  changePlaying = (quizPlaying) => {
+    console.log('Entered changePlaying in Quiz.js')
+    this.setState({
+      playing: quizPlaying
+    })
+  }
+
   /*Functions*/
   getQuestions = () => {
     if (this.state.deck==='N1') {
@@ -95,6 +102,8 @@ class Quiz extends Component {
     if (this.state.qBank[0].Hiragana!==this.state.answer.trim()) {
       fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}&furi=${this.state.qBank[0].Hiragana}&meaning=${this.state.qBank[0].English}`)
     }
+
+    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}`)
 
     console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length +" rQBank: " +this.state.rQBank.length);
     console.log(this.state.rQBank)

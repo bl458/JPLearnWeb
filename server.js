@@ -78,6 +78,20 @@ app.get('/video_vocab', (req, res) => {
    })
   })
 
+  app.get('/progress', (req, res) => {
+    const {googleId, deck, word} = req.query
+    const PROGRESS_QUERY =
+      `INSERT INTO jquiz_progress(google_id, deck, word) VALUES('${googleId}', '${deck}' , '${word}')`
+    connection.query(PROGRESS_QUERY, (err, results) => {
+      if (err) {
+        return res.send(err)
+      }
+      else {
+        return res.send('Successfully added vocab to progress')
+      }
+    })
+   })
+
 
 app.listen(4000, () => {
   console.log('Server on port 4000 working')

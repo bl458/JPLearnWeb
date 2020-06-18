@@ -6,16 +6,18 @@ class ReactiveNav extends Component {
   state = {
     id: '',
     email: '',
-    name: ''
+    name: '',
+    quizPlaying: 0
   }
 
-  handleSignInNav = (id, email, name) => {
+  handleLogInOutNav = (id, email, name, quizPlaying) => {
     this.setState({
       id: id,
       email: email,
-      name: name
+      name: name,
+      quizPlaying: quizPlaying
     })
-    this.props.onSignInNav(id, email, name)
+    this.props.onLogInOutNav(id, email, name, quizPlaying)
   }
 
   render() {
@@ -34,7 +36,7 @@ class ReactiveNav extends Component {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <GoogleBtn onSignIn={this.handleSignInNav}/>
+          <GoogleBtn onLogInOut={this.handleLogInOutNav}/>
         </Navbar.Collapse>
       </Navbar>
     );
