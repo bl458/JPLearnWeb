@@ -28,12 +28,12 @@ class Quiz extends Component {
 
   getQuestions = () => {
     if (this.state.deck==='N1') {
-      N1().then(
+      N1(10).then(
         question => this.setState({qBank: question.slice(0,this.state.numberq)})
       )
     }
     else if (this.state.deck==='N2') {
-      N2().then(
+      N2(10).then(
         question => this.setState({qBank: question.slice(0,this.state.numberq)})
       )
     }

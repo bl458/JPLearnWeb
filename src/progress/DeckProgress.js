@@ -5,7 +5,9 @@ class DeckProgress extends Component {
     return (
       <div>
         <h1>Show progress for {this.props.pDeck}!</h1>
-        <h3>{this.props.pBank.map((item) => JSON.stringify(item))}</h3>
+        <h3>
+          You have done {this.props.pBank.length} out of {this.props.pDeckSize} questions for deck {this.props.pDeck}!
+        </h3>
       </div>
     )
   }
