@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactPlayer from 'react-player';
+import React from 'react'
+import ReactPlayer from 'react-player'
 
 const ResponsivePlayer = ({url,handleProgress}) => (
   <div className="video-inner">
@@ -14,4 +14,4 @@ const ResponsivePlayer = ({url,handleProgress}) => (
   </div>
 )
 
-export default ResponsivePlayer;
+export default ResponsivePlayer

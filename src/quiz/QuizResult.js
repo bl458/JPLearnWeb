@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const QuizResult=({score, numberq, playAgain, review, firstReview}) => (
   <div className="quiz-board">
@@ -16,6 +16,6 @@ const QuizResult=({score, numberq, playAgain, review, firstReview}) => (
       </div>
     </div>
   </div>
-);
+)
 
-export default QuizResult;
+export default QuizResult

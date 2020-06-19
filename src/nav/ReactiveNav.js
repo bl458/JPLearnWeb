@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {Nav,Navbar,NavDropdown} from 'react-bootstrap';
+import React, {Component} from 'react'
+import {Nav,Navbar,NavDropdown} from 'react-bootstrap'
 import GoogleBtn from './GoogleBtn'
 
 class ReactiveNav extends Component {
@@ -27,8 +27,8 @@ class ReactiveNav extends Component {
           <GoogleBtn onLogInOut={this.handleLogInOutNav}/>
         </Navbar.Collapse>
       </Navbar>
-    );
+    )
   }
 }
 
-export default ReactiveNav;
+export default ReactiveNav

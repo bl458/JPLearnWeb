@@ -1,10 +1,8 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import './Quiz.css'
-import N1 from '../assets/preMadeDecks/N1';
-import N2 from '../assets/preMadeDecks/N2';
-import QuizStart from './QuizStart';
-import QuizState from './QuizState';
-import QuizResult from './QuizResult';
+import QuizStart from './QuizStart'
+import QuizState from './QuizState'
+import QuizResult from './QuizResult'
 
 class Quiz extends Component {
   state={
@@ -18,7 +16,7 @@ class Quiz extends Component {
     answer: '',
     questionPage: 0, //Question Page: 0, Answer page: 1
     firstReview: 1 //Review mode for the first time or naw
-  };
+  }
 
   changePlaying = (quizPlaying) => {
     this.setState({
@@ -26,37 +24,43 @@ class Quiz extends Component {
     })
   }
 
+  selectRandomArr = (arr, count) => {
+    return Promise.resolve(arr.sort(() => 0.5 - Math.random()).slice(0, count))
+  }
+
   getQuestions = () => {
-    if (this.state.deck==='N1') {
-      N1(10).then(
-        question => this.setState({qBank: question.slice(0,this.state.numberq)})
-      )
+    if (this.state.deck==='N1' || this.state.deck==='N2') {
+      fetch(`http://localhost:4000/load_deck?deck=${this.state.deck}`)
+      .then(response => response.json())
+      .then(response => this.selectRandomArr(response.data, 10))
+      .then(questions => {
+        this.setState({qBank: questions.slice(0,this.state.numberq)})
+      })
     }
-    else if (this.state.deck==='N2') {
-      N2(10).then(
-        question => this.setState({qBank: question.slice(0,this.state.numberq)})
-      )
+    //
+    else {
+      console.log('Not a premade deck')
     }
-  };
+  }
 
   onNumberqChange = (newNumberq) =>
     this.setState({numberq: newNumberq.target.value>0&&newNumberq.target.value<10
-      ? newNumberq.target.value : 10});
+      ? newNumberq.target.value : 10})
 
-  onDeckChange = (newDeck) => this.setState({deck: newDeck.target.value});
+  onDeckChange = (newDeck) => this.setState({deck: newDeck.target.value})
 
-  onAnswerChange = (newAnswer) => this.setState({answer: newAnswer.target.value});
+  onAnswerChange = (newAnswer) => this.setState({answer: newAnswer.target.value})
 
   onStart = () => {
-    this.getQuestions();
+    this.getQuestions()
     this.setState({
       score: 0,
       playing: this.state.playing===0 ? 1 : 0,
       questionPage: 0
-    });
-    console.log("Finished onStart. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
+    })
+    console.log("Finished onStart. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length)
     // console.log('Quiz id: ', this.props.id)
-  };
+  }
 
   onAgain = () => {
     this.setState({
@@ -66,12 +70,13 @@ class Quiz extends Component {
       score: 0,
       playing: this.state.playing===0 ? 1 : 0,
       firstReview: 1,
-    });
-    console.log("Finished onAgain. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length);
-  };
+    })
+    console.log("Finished onAgain. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length)
+  }
 
   onReview = () => {
-    this.state.rQBank.splice(0,1)
+    var rQBank_cp = this.state.rQBank
+    rQBank_cp.splice(0,1)
     this.setState({
       numberq: this.state.firstReview===1 ? this.state.rQBank.length : this.state.cRQBank.length,
       cRQBank: this.state.firstReview===1 ? JSON.parse(JSON.stringify(this.state.rQBank)) : JSON.parse(JSON.stringify(this.state.cRQBank)),
@@ -86,27 +91,24 @@ class Quiz extends Component {
 
   onSubmit = () => {
     console.log("Started onSubmit. qBank: " +this.state.qBank.length)
-    console.log(this.state.qBank[0].Hiragana===this.state.answer.trim())
     // Updates score, shows answer
     this.setState({
-      score: this.state.qBank[0].Hiragana===this.state.answer.trim() ?
+      score: this.state.qBank[0].hiragana===this.state.answer.trim() ?
         this.state.score+1 : this.state.score,
       questionPage: 1,
-      rQBank: this.state.qBank[0].Hiragana===this.state.answer.trim() ?
+      rQBank: this.state.qBank[0].hiragana===this.state.answer.trim() ?
         this.state.rQBank : [...this.state.rQBank, this.state.qBank[0]]
     })
 
     // Add wrong answer to review deck in db
-    if (this.state.qBank[0].Hiragana!==this.state.answer.trim()) {
-      fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}&furi=${this.state.qBank[0].Hiragana}&meaning=${this.state.qBank[0].English}`)
+    if (this.state.qBank[0].hiragana!==this.state.answer.trim()) {
+      fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].kanji}&furi=${this.state.qBank[0].hiragana}&meaning=${this.state.qBank[0].english}`)
     }
 
     // Add to deck progress in db
-    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}`)
+    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].kanji}`)
 
-    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length +" rQBank: " +this.state.rQBank.length);
-    console.log(this.state.rQBank)
-    console.log(this.state.cRQBank)
+    console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length +" rQBank: " +this.state.rQBank.length)
   }
 
   onSkip = () => {
@@ -115,35 +117,27 @@ class Quiz extends Component {
       questionPage: 1,
       rQBank: [...this.state.rQBank, this.state.qBank[0]]
     })
-    fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}&furi=${this.state.qBank[0].Hiragana}&meaning=${this.state.qBank[0].English}`)
-    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].Kanji}`)
+    fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].kanji}&furi=${this.state.qBank[0].hiragana}&meaning=${this.state.qBank[0].english}`)
+    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].kanji}`)
   }
 
   onEnterPress = (func,e) => {
-    var code=e.keyCode || e.which;
+    var code=e.keyCode || e.which
     if (code===13) {
-      func();
+      func()
     }
-  };
+  }
 
   onNext = () => {
     // Updates question, resets answer-input value
-    var qBank_cp=this.state.qBank;
-    qBank_cp.splice(0,1);
+    var qBank_cp=this.state.qBank
+    qBank_cp.splice(0,1)
     this.setState({
       qBank: qBank_cp,
-      answer: ''
-    });
-
-    // Back to question
-    this.setState({
-      questionPage: 0
-    });
-
-    // If user answered all, quit quiz
-    if (this.state.qBank.length===0) {
-      this.setState({playing: 2});
-    }
+      answer: '',
+      questionPage: 0, // Back to question
+      playing: this.state.qBank.length===0 ? 2 : this.state.playing // If user answered all, quit quiz
+    })
   }
 
   /*Actual rendering from here*/
@@ -184,8 +178,8 @@ class Quiz extends Component {
           />
         }
       </div>
-    );
+    )
   }
-};
+}
 
-export default Quiz;
+export default Quiz

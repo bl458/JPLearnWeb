@@ -107,6 +107,16 @@ app.get('/video_vocab', (req, res) => {
        }
      })
     })
+       if (err) {
+         return res.send(err)
+       }
+       else {
+         return res.json({
+           data: results
+         })
+       }
+     })
+    })
 
 
 app.listen(4000, () => {

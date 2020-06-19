@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 
 class QuestionPage extends Component {
   render() {return(
@@ -15,8 +15,8 @@ class QuestionPage extends Component {
 
       <button className="submitBtn" onClick={this.props.onSubmit}>Submit</button>
       <button className="submitBtn" onClick={this.props.onSkip}>Skip</button>
-    </div>);
+    </div>)
   }
 }
 
-export default QuestionPage;
+export default QuestionPage

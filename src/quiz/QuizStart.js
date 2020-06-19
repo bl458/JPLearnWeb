@@ -26,4 +26,4 @@ const QuizStart = ({numberq,onNumberqChange,deck,onDeckChange,onStart}) => (
   </div>
 )
 
-export default QuizStart;
+export default QuizStart

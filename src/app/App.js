@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import ReactiveNav from '../nav/ReactiveNav';
-import Quiz from '../quiz/Quiz';
-import Video from '../video/Video';
+import React, {Component} from 'react'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css'
+import ReactiveNav from '../nav/ReactiveNav'
+import Quiz from '../quiz/Quiz'
+import Video from '../video/Video'
 import Progress from '../progress/Progress'
 
 class App extends Component {
@@ -69,4 +69,4 @@ const Home=()=>(
   </div>
 )
 
-export default App;
+export default App

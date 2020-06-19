@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import Kuroshiro from 'kuroshiro';
-import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji";
-import { Tooltip } from 'reactstrap';
+import React, {Component} from 'react'
+import Kuroshiro from 'kuroshiro'
+import KuromojiAnalyzer from "kuroshiro-analyzer-kuromoji"
+import { Tooltip } from 'reactstrap'
 
 
 class Subtitle extends Component {
@@ -15,12 +15,12 @@ class Subtitle extends Component {
     tooltipText: ''
   }
 
-  toggle = () => this.setState({tooltipOpen: window.getSelection().toString() !== ''&&!this.state.tooltipOpen});
+  toggle = () => this.setState({tooltipOpen: window.getSelection().toString() !== ''&&!this.state.tooltipOpen})
 
   toFuri = async (jp) => {
-    var kuroshiro = new Kuroshiro();
-    await kuroshiro.init(new KuromojiAnalyzer({ dictPath: "/dict" }));
-    return await kuroshiro.convert(jp, { to: "hiragana" });
+    var kuroshiro = new Kuroshiro()
+    await kuroshiro.init(new KuromojiAnalyzer({ dictPath: "/dict" }))
+    return await kuroshiro.convert(jp, { to: "hiragana" })
   }
 
   onHighlight = () => {
@@ -84,8 +84,8 @@ class Subtitle extends Component {
         <br/><br/>
 
       </div>
-    );
+    )
   }
 }
 
-export default Subtitle;
+export default Subtitle
