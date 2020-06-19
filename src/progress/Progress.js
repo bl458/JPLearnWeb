@@ -24,7 +24,7 @@ class Progress extends Component {
   }
 
   setPDeckSize = () => {
-    if (this.state.pDeck==='N1' || this.state.pDeck==='N2' || this.state.pDeck==='review' || this.state.pDeck==='video') {
+    if (this.state.pDeck==='N1' || this.state.pDeck==='N2' || this.state.pDeck==='review' || this.state.pDeck==='video_vocab') {
       fetch(`http://localhost:4000/load_deck?deck=${this.state.pDeck}`)
       .then(response => response.json())
       .then(response => {
@@ -62,6 +62,7 @@ class Progress extends Component {
               pDeckSize={this.state.pDeckSize}
               pBank={this.state.pBank}
               onGoBack={this.onGoBack}
+              displayDeckName={this.props.displayDeckName}
             />
           }
         </div>

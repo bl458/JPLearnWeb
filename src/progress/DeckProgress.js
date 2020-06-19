@@ -4,7 +4,7 @@ class DeckProgress extends Component {
   render() {
     return (
       <div>
-        <h1>Show progress for {this.props.pDeck}!</h1>
+        <h1>Show progress for {this.props.displayDeckName(this.props.pDeck)} deck!</h1>
         <h3>
           You have done {this.props.pBank.length} out of {this.props.pDeckSize} Kanji!
         </h3>

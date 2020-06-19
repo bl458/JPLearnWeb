@@ -26,6 +26,16 @@ class App extends Component {
     console.log('In App.js: Id: ', this.state.id, 'Email: ', this.state.email, '\nName: ', this.state.name)
   }
 
+  displayDeckName = (deck) => {
+    if (deck==='review') {
+      return 'Review'
+    }
+    else if (deck==='video_vocab') {
+      return 'Video'
+    }
+    return deck
+  }
+
   render() {
     return (
       <div className="App">
@@ -47,6 +57,7 @@ class App extends Component {
                 id={this.state.id}
                 email={this.state.email}
                 name={this.state.name}
+                displayDeckName={this.displayDeckName}
               />}
             />
             <Route path='/quiz/deck_progress' render={() =>
@@ -54,6 +65,7 @@ class App extends Component {
                 id={this.state.id}
                 email={this.state.email}
                 name={this.state.name}
+                displayDeckName={this.displayDeckName}
               />}
             />
           </Switch>
@@ -62,11 +74,6 @@ class App extends Component {
     )
   }
 }
-
-const Home=()=>(
-  <div>
-      <h1>Home Page</h1>
-  </div>
-)
+const Home = () => {}
 
 export default App

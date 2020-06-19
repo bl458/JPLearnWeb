@@ -18,16 +18,6 @@ class Quiz extends Component {
     firstReview: 1 //Review mode for the first time or naw
   }
 
-  displayDeckName = () => {
-    if (this.state.deck==='review') {
-      return 'Review'
-    }
-    else if (this.state.deck==='video_vocab') {
-      return 'Video'
-    }
-    return this.state.deck
-  }
-
   changePlaying = (quizPlaying) => {
     this.setState({
       playing: quizPlaying
@@ -176,7 +166,7 @@ class Quiz extends Component {
             onAnswerChange={this.onAnswerChange}
             onEnterPress={this.onEnterPress}
             onNext={this.onNext}
-            displayDeckName={this.displayDeckName}
+            displayDeckName={this.props.displayDeckName}
           />
         }
         {this.state.playing===2&&
