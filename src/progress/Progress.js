@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 import DeckSelection from './DeckSelection'
 import DeckProgress from './DeckProgress'
-import N1 from '../assets/preMadeDecks/N1';
-import N2 from '../assets/preMadeDecks/N2';
 
 
 class Progress extends Component {
@@ -22,15 +20,17 @@ class Progress extends Component {
 
   setPDeckSize = (pDeck) => {
     console.log('Entered setPDeckSize')
-    if (this.state.pDeck==='N1') {
-      N1().then(
-        questions => {this.setState({pDeckSize: questions.length})}
-      )
+    if (this.state.deck==='N1' || this.state.deck==='N2') {
+      fetch(`http://localhost:4000/load_deck?deck=${this.state.deck}`)
+      .then(response => response.json())
+      .then(response => this.selectRandomArr(response.data, 10))
+      .then(questions => {
+        this.setState({pDeckSize: questions.length})
+      })
     }
-    else if (this.state.pDeck==='N2') {
-      N2().then(
-        questions => {this.setState({pDeckSize: questions.length})}
-      )
+    //
+    else {
+      console.log('Not a premade deck')
     }
   }
 

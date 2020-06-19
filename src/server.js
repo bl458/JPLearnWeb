@@ -107,16 +107,22 @@ app.get('/video_vocab', (req, res) => {
        }
      })
     })
-       if (err) {
-         return res.send(err)
-       }
-       else {
-         return res.json({
-           data: results
-         })
-       }
+
+    app.get('/load_deck', (req, res) => {
+      const {deck} = req.query
+      const LOAD_DECK_QUERY =
+        `SELECT * FROM jquiz_${deck}`
+      connection.query(LOAD_DECK_QUERY, (err, results) => {
+        if (err) {
+          return res.send(err)
+        }
+        else {
+          return res.json({
+            data: results
+          })
+        }
+      })
      })
-    })
 
 
 app.listen(4000, () => {
