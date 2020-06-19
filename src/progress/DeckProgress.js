@@ -6,8 +6,9 @@ class DeckProgress extends Component {
       <div>
         <h1>Show progress for {this.props.pDeck}!</h1>
         <h3>
-          You have done {this.props.pBank.length} out of {this.props.pDeckSize} questions for deck {this.props.pDeck}!
+          You have done {this.props.pBank.length} out of {this.props.pDeckSize} Kanji!
         </h3>
+        <button className="playBtn" onClick={this.props.goBack}>Go back!</button>
       </div>
     )
   }

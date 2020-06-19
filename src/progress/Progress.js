@@ -11,6 +11,12 @@ class Progress extends Component {
     showP: 0 // Show deck progress if 1. Show deck selection page if 0
   }
 
+  goBack = () => this.setState({
+    pDeckSize: 0,
+    pBank: [],
+    showP: 0,
+  })
+
   onPDeckChange = (e) => {
     console.log('Called onPDeckChange')
     this.setState({
@@ -20,12 +26,11 @@ class Progress extends Component {
 
   setPDeckSize = (pDeck) => {
     console.log('Entered setPDeckSize')
-    if (this.state.deck==='N1' || this.state.deck==='N2') {
-      fetch(`http://localhost:4000/load_deck?deck=${this.state.deck}`)
+    if (this.state.pDeck==='N1' || this.state.pDeck==='N2') {
+      fetch(`http://localhost:4000/load_deck?deck=${this.state.pDeck}`)
       .then(response => response.json())
-      .then(response => this.selectRandomArr(response.data, 10))
-      .then(questions => {
-        this.setState({pDeckSize: questions.length})
+      .then(response => {
+        this.setState({pDeckSize: response.data.length})
       })
     }
     //
@@ -44,8 +49,6 @@ class Progress extends Component {
     this.setPDeckSize()
   }
 
-
-
   render() {
     return (
       <div className="quiz-board">
@@ -61,6 +64,7 @@ class Progress extends Component {
               pDeck={this.state.pDeck}
               pDeckSize={this.state.pDeckSize}
               pBank={this.state.pBank}
+              goBack={this.goBack}
             />
           }
         </div>
