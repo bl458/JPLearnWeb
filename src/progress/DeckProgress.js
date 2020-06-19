@@ -8,7 +8,7 @@ class DeckProgress extends Component {
         <h3>
           You have done {this.props.pBank.length} out of {this.props.pDeckSize} Kanji!
         </h3>
-        <button className="playBtn" onClick={this.props.goBack}>Go back!</button>
+        <button className="playBtn" onClick={this.props.onGoBack}>Go back!</button>
       </div>
     )
   }

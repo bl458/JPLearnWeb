@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import DeckSelection from './DeckSelection'
 import DeckProgress from './DeckProgress'
 
-
 class Progress extends Component {
   state = {
     pDeck: 'N1', // Deck that user chose to view progress
@@ -11,31 +10,29 @@ class Progress extends Component {
     showP: 0 // Show deck progress if 1. Show deck selection page if 0
   }
 
-  goBack = () => this.setState({
+  onGoBack = () => this.setState({
+    pDeck: 'N1',
     pDeckSize: 0,
     pBank: [],
     showP: 0,
   })
 
   onPDeckChange = (e) => {
-    console.log('Called onPDeckChange')
     this.setState({
       pDeck: e.target.value
     })
   }
 
-  setPDeckSize = (pDeck) => {
-    console.log('Entered setPDeckSize')
-    if (this.state.pDeck==='N1' || this.state.pDeck==='N2') {
+  setPDeckSize = () => {
+    if (this.state.pDeck==='N1' || this.state.pDeck==='N2' || this.state.pDeck==='Review' || this.state.pDeck==='Video') {
       fetch(`http://localhost:4000/load_deck?deck=${this.state.pDeck}`)
       .then(response => response.json())
       .then(response => {
         this.setState({pDeckSize: response.data.length})
       })
     }
-    //
     else {
-      console.log('Not a premade deck')
+      console.log('Not a valid deck')
     }
   }
 
@@ -64,7 +61,7 @@ class Progress extends Component {
               pDeck={this.state.pDeck}
               pDeckSize={this.state.pDeckSize}
               pBank={this.state.pBank}
-              goBack={this.goBack}
+              onGoBack={this.onGoBack}
             />
           }
         </div>

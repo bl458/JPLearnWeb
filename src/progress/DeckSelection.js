@@ -8,6 +8,8 @@ class DeckSelection extends Component {
         <select className="deck-select" onChange={this.props.onPDeckChange}>
           <option value="N1">N1</option>
           <option value="N2">N2</option>
+          <option value="review">Review</option>
+          <option value="video_vocab">Video</option>
         </select>
 
         <br />
