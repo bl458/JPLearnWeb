@@ -16,9 +16,8 @@ const QuizStart = ({numberq,onNumberqChange,deck,onDeckChange,onStart}) => (
       <select className="deck-select" value={deck} onChange={onDeckChange}>
         <option value="N1">N1</option>
         <option value="N2">N2</option>
-        <option value="N3">N3</option>
-        <option value="N4">N4</option>
-        <option value="N5">N5</option>
+        <option value="review">Review</option>
+        <option value="video_vocab">Video</option>
       </select>
       <br /><br />
       <button className="playBtn" onClick={onStart}>Start!</button>

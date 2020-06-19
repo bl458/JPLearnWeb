@@ -24,7 +24,7 @@ class Progress extends Component {
   }
 
   setPDeckSize = () => {
-    if (this.state.pDeck==='N1' || this.state.pDeck==='N2' || this.state.pDeck==='Review' || this.state.pDeck==='Video') {
+    if (this.state.pDeck==='N1' || this.state.pDeck==='N2' || this.state.pDeck==='review' || this.state.pDeck==='video') {
       fetch(`http://localhost:4000/load_deck?deck=${this.state.pDeck}`)
       .then(response => response.json())
       .then(response => {

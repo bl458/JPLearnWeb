@@ -51,9 +51,9 @@ app.get('/register', (req, res) => {
 })
 
 app.get('/video_vocab', (req, res) => {
-  const {googleId, vidId, word, furi, meaning} = req.query
+  const {googleId, vidId, kanji, hiragana, english} = req.query
   const VIDEO_VOCAB_QUERY =
-    `INSERT INTO jquiz_video_vocab(google_id, video_id, word, furi, meaning) VALUES('${googleId}', '${vidId}' , '${word}', '${furi}', '${meaning}')`
+    `INSERT INTO jquiz_video_vocab(google_id, video_id, kanji, hiragana, english) VALUES('${googleId}', '${vidId}' , '${kanji}', '${hiragana}', '${english}')`
   connection.query(VIDEO_VOCAB_QUERY, (err, results) => {
     if (err) {
       return res.send(err)
@@ -65,9 +65,9 @@ app.get('/video_vocab', (req, res) => {
  })
 
  app.get('/review', (req, res) => {
-   const {googleId, deck, word, furi, meaning} = req.query
+   const {googleId, deck, kanji, hiragana, english} = req.query
    const REVIEW_QUERY =
-     `INSERT INTO jquiz_review(google_id, deck, word, furi, meaning) VALUES('${googleId}', '${deck}' , '${word}', '${furi}', '${meaning}')`
+     `INSERT INTO jquiz_review(google_id, deck, kanji, hiragana, english) VALUES('${googleId}', '${deck}' , '${kanji}', '${hiragana}', '${english}')`
    connection.query(REVIEW_QUERY, (err, results) => {
      if (err) {
        return res.send(err)
@@ -79,9 +79,9 @@ app.get('/video_vocab', (req, res) => {
   })
 
   app.get('/progress', (req, res) => {
-    const {googleId, deck, word} = req.query
+    const {googleId, deck, kanji} = req.query
     const PROGRESS_QUERY =
-      `INSERT INTO jquiz_progress(google_id, deck, word) VALUES('${googleId}', '${deck}' , '${word}')`
+      `INSERT INTO jquiz_progress(google_id, deck, kanji) VALUES('${googleId}', '${deck}' , '${kanji}')`
     connection.query(PROGRESS_QUERY, (err, results) => {
       if (err) {
         return res.send(err)

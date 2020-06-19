@@ -18,6 +18,16 @@ class Quiz extends Component {
     firstReview: 1 //Review mode for the first time or naw
   }
 
+  displayDeckName = () => {
+    if (this.state.deck==='review') {
+      return 'Review'
+    }
+    else if (this.state.deck==='video_vocab') {
+      return 'Video'
+    }
+    return this.state.deck
+  }
+
   changePlaying = (quizPlaying) => {
     this.setState({
       playing: quizPlaying
@@ -29,7 +39,7 @@ class Quiz extends Component {
   }
 
   getQuestions = () => {
-    if (this.state.deck==='N1' || this.state.deck==='N2') {
+    if (this.state.deck==='N1' || this.state.deck==='N2' || this.state.deck==='review' || this.state.deck==='video_vocab') {
       fetch(`http://localhost:4000/load_deck?deck=${this.state.deck}`)
       .then(response => response.json())
       .then(response => this.selectRandomArr(response.data, 10))
@@ -39,7 +49,7 @@ class Quiz extends Component {
     }
     //
     else {
-      console.log('Not a premade deck')
+      console.log('Not a valid deck')
     }
   }
 
@@ -100,13 +110,13 @@ class Quiz extends Component {
         this.state.rQBank : [...this.state.rQBank, this.state.qBank[0]]
     })
 
-    // Add wrong answer to review deck in db
-    if (this.state.qBank[0].hiragana!==this.state.answer.trim()) {
-      fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].kanji}&furi=${this.state.qBank[0].hiragana}&meaning=${this.state.qBank[0].english}`)
+    // Add wrong answer to review deck in db when you're not playing quiz with the review deck
+    if (this.state.qBank[0].hiragana!==this.state.answer.trim() && this.state.deck!=='review') {
+      fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&kanji=${this.state.qBank[0].kanji}&hiragana=${this.state.qBank[0].hiragana}&english=${this.state.qBank[0].english}`)
     }
 
     // Add to deck progress in db
-    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].kanji}`)
+    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&kanji=${this.state.qBank[0].kanji}`)
 
     console.log("Finished onSubmit. numberq: " +this.state.numberq +" qBank: " +this.state.qBank.length +" rQBank: " +this.state.rQBank.length)
   }
@@ -117,8 +127,8 @@ class Quiz extends Component {
       questionPage: 1,
       rQBank: [...this.state.rQBank, this.state.qBank[0]]
     })
-    fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].kanji}&furi=${this.state.qBank[0].hiragana}&meaning=${this.state.qBank[0].english}`)
-    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&word=${this.state.qBank[0].kanji}`)
+    fetch(`http://localhost:4000/review?googleId=${this.props.id}&deck=${this.state.deck}&kanji=${this.state.qBank[0].kanji}&hiragana=${this.state.qBank[0].hiragana}&english=${this.state.qBank[0].english}`)
+    fetch(`http://localhost:4000/progress?googleId=${this.props.id}&deck=${this.state.deck}&kanji=${this.state.qBank[0].kanji}`)
   }
 
   onEnterPress = (func,e) => {
@@ -166,6 +176,7 @@ class Quiz extends Component {
             onAnswerChange={this.onAnswerChange}
             onEnterPress={this.onEnterPress}
             onNext={this.onNext}
+            displayDeckName={this.displayDeckName}
           />
         }
         {this.state.playing===2&&

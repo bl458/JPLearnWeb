@@ -45,12 +45,12 @@ class Subtitle extends Component {
     console.log('Adding vocab for id: ', this.props.id)
     const googleId = this.props.id
     const vidId = '' //placeholder
-    const word = window.getSelection().toString()
-    const furi = this.state.tooltipText
-    const meaning = '' //placeholder
+    const kanji = window.getSelection().toString()
+    const hiragana = this.state.tooltipText
+    const english = '' //placeholder
 
-    fetch(`http://localhost:4000/video_vocab?googleId=${googleId}&vidId=${vidId}&word=${word}&furi=${furi}&meaning=${meaning}`)
-    console.log('GoogleId: ', googleId, 'VidId: ', vidId, 'Word: ', word, 'Furi:', furi, 'Meaning: ', meaning)
+    fetch(`http://localhost:4000/video_vocab?googleId=${googleId}&vidId=${vidId}&kanji=${kanji}&hiragana=${hiragana}&english=${english}`)
+    console.log('GoogleId: ', googleId, 'VidId: ', vidId, 'Kanji: ', kanji, 'Hiragana:', hiragana, 'English: ', english)
   }
 
   render() {
