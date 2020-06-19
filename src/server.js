@@ -92,6 +92,22 @@ app.get('/video_vocab', (req, res) => {
     })
    })
 
+   app.get('/load_deck', (req, res) => {
+     const {deck} = req.query
+     const LOAD_DECK =
+       `SELECT * FROM jquiz_${deck}`
+     connection.query(LOAD_DECK, (err, results) => {
+       if (err) {
+         return res.send(err)
+       }
+       else {
+         return res.json({
+           data: results
+         })
+       }
+     })
+    })
+
 
 app.listen(4000, () => {
   console.log('Server on port 4000 working')

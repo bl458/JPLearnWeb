@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import QuestionPage from './QuestionPage';
-import AnswerPage from './AnswerPage';
+import React, {Component} from 'react'
+import QuestionPage from './QuestionPage'
+import AnswerPage from './AnswerPage'
 
 class QuizState extends Component {
   render() {
@@ -13,7 +13,7 @@ class QuizState extends Component {
           Type the Hiragana reading!
           <br /><br />
 
-          {this.props.qBank[0].Kanji}
+          {this.props.qBank[0].kanji}
           <br /><br />
 
           {this.props.questionPage===0&&
@@ -34,8 +34,8 @@ class QuizState extends Component {
           }
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default QuizState;
+export default QuizState

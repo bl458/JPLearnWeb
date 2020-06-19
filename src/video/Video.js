@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import ResponsivePlayer from './ResponsivePlayer';
-import Subtitle from './Subtitle';
-import './Video.css';
-import sub_one from '../assets/subtitle_json/Attack.on.Titan.01.To.You.in.2000.Years.720p.Bluray.x264.Kirion.json';
+import React, {Component} from 'react'
+import ResponsivePlayer from './ResponsivePlayer'
+import Subtitle from './Subtitle'
+import './Video.css'
+import sub_one from '../assets/subtitle_json/Attack.on.Titan.01.To.You.in.2000.Years.720p.Bluray.x264.Kirion.json'
 import sub_one_jp from '../assets/subtitle_json/[SubtitleTools.com] [Kamigami] Shingeki no Kyojin - 01 [1280x720 x264 AAC Sub(Chi,Jap)].json'
 
 
@@ -19,7 +19,7 @@ class Video extends Component {
     this.setState({
         playedSeconds: state.playedSeconds,
         playedPercent: state.played
-      });
+      })
   }
 
   updateEngSub = (playedSeconds,playedPercent) => {
@@ -29,7 +29,7 @@ class Video extends Component {
           this.setState({
             engSub: sub_one[i].content
           })
-          return;
+          return
         }
       }
       this.setState({
@@ -45,7 +45,7 @@ class Video extends Component {
           this.setState({
             jpSub: sub_one_jp[i].content
           })
-          return;
+          return
         }
       }
       this.setState({
@@ -55,7 +55,7 @@ class Video extends Component {
   }
 
   updateSub = (playedSeconds,playedPercent) => {
-    this.updateEngSub(playedSeconds, playedPercent);
+    this.updateEngSub(playedSeconds, playedPercent)
     this.updateJpSub(playedSeconds, playedPercent)
   }
 
@@ -63,11 +63,11 @@ class Video extends Component {
     this.interval =
       setInterval(() =>
         this.updateSub(this.state.playedSeconds, this.state.playedPercent),
-        0.00000000000000000000000000000000000000000000000000001);
+        0.00000000000000000000000000000000000000000000000000001)
   }
 
   componentWillUnmount() {
-    clearInterval(this.interval);
+    clearInterval(this.interval)
   }
 
   render() {
@@ -86,8 +86,8 @@ class Video extends Component {
           />
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Video;
+export default Video

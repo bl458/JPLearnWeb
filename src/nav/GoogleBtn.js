@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {OAuth2Client} from 'google-auth-library'
 import { GoogleLogin, GoogleLogout } from 'react-google-login'
 
-const CLIENT_ID = '153651118145-gp8r1v7josbjmcr60rpjeupu1pdo2rmh.apps.googleusercontent.com';
+const CLIENT_ID = '153651118145-gp8r1v7josbjmcr60rpjeupu1pdo2rmh.apps.googleusercontent.com'
 
 class GoogleBtn extends Component {
   state = {
@@ -53,7 +53,7 @@ class GoogleBtn extends Component {
       email: '',
       name: '',
       quizPlaying: 0
-    }));
+    }))
     this.props.onLogInOut(this.state.id, this.state.email, this.state.name, this.state.quizPlaying)
     console.log('Email: ', this.state.email, '\nName: ', this.state.name, '\nQuizPlaying: ', this.state.quizPlaying)
   }
@@ -93,4 +93,4 @@ class GoogleBtn extends Component {
   }
 }
 
-export default GoogleBtn;
+export default GoogleBtn
