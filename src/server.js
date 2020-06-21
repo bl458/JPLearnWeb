@@ -4,15 +4,15 @@ const mysql = require('mysql')
 
 const app = express()
 const SELECT_ALL_LOGIN = "SELECT * FROM jquiz_google_login"
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'Lbc1skygrin',
+const connection = mysql.createPool({
+  host: '18.191.224.222',
+  user: 'ec2User',
+  password: 'Lbc1skygrin!',
   database: 'nodejs',
   charset : 'utf8mb4'
 })
 
-connection.connect(err => {
+connection.getConnection(err => {
   if(err) {
     return err
   }
@@ -125,6 +125,4 @@ app.get('/video_vocab', (req, res) => {
      })
 
 
-app.listen(4000, () => {
-  console.log('Server on port 4000 working')
-})
+app.listen(8080, "172.31.39.187")
