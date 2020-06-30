@@ -74,6 +74,6 @@ class App extends Component {
     )
   }
 }
-const Home = () => {}
+const Home = () => <div></div>
 
 export default App
